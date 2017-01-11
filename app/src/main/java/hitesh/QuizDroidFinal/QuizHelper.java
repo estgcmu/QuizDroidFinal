@@ -43,47 +43,47 @@ public class QuizHelper extends SQLiteOpenHelper {
 
 	private void addQuestion() {
                                  //Pergunta, Opção 1, Opção 2, Opção 3, Opção 4, Nivel de dficuldade, Opção correta
-		Question q1 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+		Question q1 = new Question("Pergunta 1", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
 		this.addQuestion(q1);
-		Question q2 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+		Question q2 = new Question("Pergunta 2", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
 		this.addQuestion(q2);
-        Question q3 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+        Question q3 = new Question("Pergunta 3", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q3);
-        Question q4 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+        Question q4 = new Question("Pergunta 4", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q4);
-        Question q5 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+        Question q5 = new Question("Pergunta 5", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q5);
-        Question q6 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
+        Question q6 = new Question("Pergunta 6", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q6);
-        Question q7 = new Question("9-9 = ?", "0", "9", "1","8", "0", "1");
+        Question q7 = new Question("Pergunta 7", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q7);
-        Question q8 = new Question("3+6 = ?", "8", "7", "9","8", "9", "1");
+        Question q8 = new Question("Pergunta 8", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q8);
-        Question q9 = new Question("1+5 = ?", "6", "7", "5","8", "6", "1");
+        Question q9 = new Question("Pergunta 9", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q9);
-        Question q10 = new Question("7-5 = ?", "3", "2", "6","8", "2", "1");
+        Question q10 = new Question("Pergunta 10", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "DIFICIL", "Opcao 1");
         this.addQuestion(q10);
-        Question q11 = new Question("7-2 = ?", "7", "6", "5","8", "5", "1");
+        Question q11 = new Question("Pergunta 11", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q11);
-        Question q12 = new Question("3+5 = ?", "8", "7", "5","8", "8", "1");
+        Question q12 = new Question("Pergunta 12", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q12);
-        Question q13 = new Question("0+6 = ?", "7", "6", "5","8", "6", "1");
+        Question q13 = new Question("Pergunta 13", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q13);
-        Question q14 = new Question("12-10 = ?", "1", "2", "3","8", "2", "1");
+        Question q14 = new Question("Pergunta 14", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q14);
-        Question q15 = new Question("12+2 = ?", "14", "15", "16","8", "14", "1");
+        Question q15 = new Question("Pergunta 15", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q15);
-        Question q16 = new Question("2-1 = ?", "2", "1", "0","8", "1", "1");
+        Question q16 = new Question("Pergunta 16", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q16);
-        Question q17 = new Question("6-6 = ?", "6", "12", "0","8", "0", "1");
+        Question q17 = new Question("Pergunta 17", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q17);
-        Question q18 = new Question("5-1 = ?", "4", "3", "2","8", "4", "1");
+        Question q18 = new Question("Pergunta 18", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q18);
-        Question q19 = new Question("4+2 = ?", "6", "7", "5","8", "6", "1");
+        Question q19 = new Question("Pergunta 19", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q19);
-        Question q20 = new Question("5+1 = ?", "6", "7", "5","8", "6", "1");
+        Question q20 = new Question("Pergunta 20", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q20);
-        Question q21 = new Question("5-4 = ?", "5", "4", "1","8", "1", "1");
+        Question q21 = new Question("Pergunta 21", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q21);
 		// END
 	}
@@ -111,11 +111,11 @@ public class QuizHelper extends SQLiteOpenHelper {
 		// Inserting Row
 		dbase.insert(TABLE_QUEST, null, values);
 	}
-
+    //CONSULTA PERUGUNTAS POR NIVEL DE DIFICULDADE
 	public List<Question> getAllQuestions() {
 		List<Question> quesList = new ArrayList<Question>();
 		// Select All Query
-		String selectQuery = "SELECT  * FROM " + TABLE_QUEST;
+		String selectQuery = "SELECT  * FROM " + TABLE_QUEST +" WHERE " + KEY_ODIF + "='NIVEL' ORDER BY RANDOM() LIMIT 0,10";
 		dbase = this.getReadableDatabase();
 		Cursor cursor = dbase.rawQuery(selectQuery, null);
 		// looping through all rows and adding to list
@@ -133,9 +133,10 @@ public class QuizHelper extends SQLiteOpenHelper {
 
             quesList.add(quest);
         } while (cursor.moveToNext());
-		// return quest list
+        //cursor.close();
+        // return quest list
 		return quesList;
-        //quest.close();dbase.close();
+
 	}
 
 

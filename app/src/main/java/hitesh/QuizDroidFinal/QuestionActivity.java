@@ -17,6 +17,7 @@ public class QuestionActivity extends Activity {
     List<Question> quesList;
     int score = 0;
     int qid = 0;
+    //int number_quest = 0;
 
 
     Question currentQ;
@@ -30,11 +31,12 @@ public class QuestionActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         QuizHelper db = new QuizHelper(this);  // my question bank class
-        quesList = db.getAllQuestions();  // this will fetch all quetonall questions
+        quesList = db.getAllQuestions();  // this will fetch all quetions
         currentQ = quesList.get(qid); // the current question
 
-        txtQuestion = (TextView) findViewById(R.id.txtQuestion);
         // the textview in which the question will be displayed
+        txtQuestion = (TextView) findViewById(R.id.txtQuestion);
+
 
         // the three buttons,
         // the idea is to set the text of three buttons with the options from question bank
@@ -114,12 +116,10 @@ public class QuestionActivity extends Activity {
             intent.putExtras(b); // Put your score to your next
             startActivity(intent);
             finish();
-            //TESTE
-            //dwqdqw
-
 
         }
-        if (qid < 20) {
+        // if (qid < 6) {
+        if (score < 100000) {
 
             // if questions are not over then do this
             currentQ = quesList.get(qid);

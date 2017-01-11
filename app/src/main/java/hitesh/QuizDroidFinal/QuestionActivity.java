@@ -1,10 +1,5 @@
 package hitesh.QuizDroidFinal;
 
-/**
- * Created by H on 7/12/2015.
- */
-
-
 import java.util.List;
 
 import android.annotation.SuppressLint;
@@ -25,7 +20,7 @@ public class QuestionActivity extends Activity {
 
 
     Question currentQ;
-    TextView txtQuestion, scored;
+    TextView txtQuestion, scored, nivel;
     Button button1, button2, button3, button4 ;
 
 
@@ -51,6 +46,8 @@ public class QuestionActivity extends Activity {
 
         // the textview in which score will be displayed
         scored = (TextView) findViewById(R.id.score);
+        nivel = (TextView) findViewById(R.id.nivel);
+
 
         // the timer
         //times = (TextView) findViewById(R.id.timers);
@@ -152,6 +149,7 @@ public class QuestionActivity extends Activity {
 
         // the method which will put all things together
         txtQuestion.setText(currentQ.getQUESTION());
+        nivel.setText(currentQ.getODIF());
         button1.setText(currentQ.getOPTA());
         button2.setText(currentQ.getOPTB());
         button3.setText(currentQ.getOPTC());

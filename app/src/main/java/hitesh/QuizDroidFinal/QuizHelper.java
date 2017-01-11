@@ -11,9 +11,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class QuizHelper extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 	// Database Name
-	private static final String DATABASE_NAME = "teste";
+	private static final String DATABASE_NAME = "teste_2"; //Nome da base de dados
 	// tasks table name
-	private static final String TABLE_QUEST = "quest_teste";
+	private static final String TABLE_QUEST = "quest_teste"; // Nome da tabela
 	// tasks Table Columns names
 	private static final String KEY_ID = "qid";
 	private static final String KEY_QUES = "question";
@@ -22,6 +22,7 @@ public class QuizHelper extends SQLiteOpenHelper {
 	private static final String KEY_OPTB = "optb"; // option b
 	private static final String KEY_OPTC = "optc"; // option c
 	private static final String KEY_OPTD = "optd"; // option d
+    private static final String KEY_ODIF = "odif"; // option dificuldade
 	private SQLiteDatabase dbase;
 
 	public QuizHelper(Context context) {
@@ -34,54 +35,55 @@ public class QuizHelper extends SQLiteOpenHelper {
 		String sql = "CREATE TABLE IF NOT EXISTS " + TABLE_QUEST + " ( "
 				+ KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_QUES
 				+ " TEXT, " + KEY_ANSWER + " TEXT, " + KEY_OPTA + " TEXT, "
-				+ KEY_OPTB + " TEXT, " + KEY_OPTC + " TEXT, " + KEY_OPTD + " TEXT " +")";
+				+ KEY_OPTB + " TEXT, " + KEY_OPTC + " TEXT, " + KEY_OPTD + " TEXT, " + KEY_ODIF + " TEXT " +")";
 		db.execSQL(sql);
 		addQuestion();
 		// db.close();
 	}
 
 	private void addQuestion() {
-		Question q1 = new Question("Qual é a formula da molecular da água?", "CO2", "II2", "O2", "H2O", "CO2");
+                                 //Pergunta, Opção 1, Opção 2, Opção 3, Opção 4, Nivel de dficuldade, Opção correta
+		Question q1 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
 		this.addQuestion(q1);
-		Question q2 = new Question("Fala-se em Cuba e pensamos no país, mas é tambem nome de uma localidade.", "No Alentejo", "No Ribatejo", "No Algarve","No Douro", "No Alentejo");
+		Question q2 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
 		this.addQuestion(q2);
-        Question q3 = new Question("10-3 = ?", "6", "7", "8","8", "7");
+        Question q3 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q3);
-        Question q4 = new Question("5+7 = ?", "12", "13", "14","8", "12");
+        Question q4 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q4);
-        Question q5 = new Question("3-1 = ?", "1", "3", "2","8", "2");
+        Question q5 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q5);
-        Question q6 = new Question("0+1 = ?", "1", "0", "10","8", "1");
+        Question q6 = new Question("Pergunta", "Opcao 1", "Opcao 2", "Opcao 3", "Opcao 4", "NIVEL", "Opcao 1");
         this.addQuestion(q6);
-        Question q7 = new Question("9-9 = ?", "0", "9", "1","8", "0");
+        Question q7 = new Question("9-9 = ?", "0", "9", "1","8", "0", "1");
         this.addQuestion(q7);
-        Question q8 = new Question("3+6 = ?", "8", "7", "9","8", "9");
+        Question q8 = new Question("3+6 = ?", "8", "7", "9","8", "9", "1");
         this.addQuestion(q8);
-        Question q9 = new Question("1+5 = ?", "6", "7", "5","8", "6");
+        Question q9 = new Question("1+5 = ?", "6", "7", "5","8", "6", "1");
         this.addQuestion(q9);
-        Question q10 = new Question("7-5 = ?", "3", "2", "6","8", "2");
+        Question q10 = new Question("7-5 = ?", "3", "2", "6","8", "2", "1");
         this.addQuestion(q10);
-        Question q11 = new Question("7-2 = ?", "7", "6", "5","8", "5");
+        Question q11 = new Question("7-2 = ?", "7", "6", "5","8", "5", "1");
         this.addQuestion(q11);
-        Question q12 = new Question("3+5 = ?", "8", "7", "5","8", "8");
+        Question q12 = new Question("3+5 = ?", "8", "7", "5","8", "8", "1");
         this.addQuestion(q12);
-        Question q13 = new Question("0+6 = ?", "7", "6", "5","8", "6");
+        Question q13 = new Question("0+6 = ?", "7", "6", "5","8", "6", "1");
         this.addQuestion(q13);
-        Question q14 = new Question("12-10 = ?", "1", "2", "3","8", "2");
+        Question q14 = new Question("12-10 = ?", "1", "2", "3","8", "2", "1");
         this.addQuestion(q14);
-        Question q15 = new Question("12+2 = ?", "14", "15", "16","8", "14");
+        Question q15 = new Question("12+2 = ?", "14", "15", "16","8", "14", "1");
         this.addQuestion(q15);
-        Question q16 = new Question("2-1 = ?", "2", "1", "0","8", "1");
+        Question q16 = new Question("2-1 = ?", "2", "1", "0","8", "1", "1");
         this.addQuestion(q16);
-        Question q17 = new Question("6-6 = ?", "6", "12", "0","8", "0");
+        Question q17 = new Question("6-6 = ?", "6", "12", "0","8", "0", "1");
         this.addQuestion(q17);
-        Question q18 = new Question("5-1 = ?", "4", "3", "2","8", "4");
+        Question q18 = new Question("5-1 = ?", "4", "3", "2","8", "4", "1");
         this.addQuestion(q18);
-        Question q19 = new Question("4+2 = ?", "6", "7", "5","8", "6");
+        Question q19 = new Question("4+2 = ?", "6", "7", "5","8", "6", "1");
         this.addQuestion(q19);
-        Question q20 = new Question("5+1 = ?", "6", "7", "5","8", "6");
+        Question q20 = new Question("5+1 = ?", "6", "7", "5","8", "6", "1");
         this.addQuestion(q20);
-        Question q21 = new Question("5-4 = ?", "5", "4", "1","8", "1");
+        Question q21 = new Question("5-4 = ?", "5", "4", "1","8", "1", "1");
         this.addQuestion(q21);
 		// END
 	}
@@ -104,6 +106,7 @@ public class QuizHelper extends SQLiteOpenHelper {
 		values.put(KEY_OPTB, quest.getOPTB());
 		values.put(KEY_OPTC, quest.getOPTC());
         values.put(KEY_OPTD, quest.getOPTD());
+        values.put(KEY_ODIF, quest.getODIF());
 
 		// Inserting Row
 		dbase.insert(TABLE_QUEST, null, values);
@@ -125,6 +128,7 @@ public class QuizHelper extends SQLiteOpenHelper {
             quest.setOPTB(cursor.getString(4));
             quest.setOPTC(cursor.getString(5));
             quest.setOPTD(cursor.getString(6));
+            quest.setODIF(cursor.getString(7));
 
 
             quesList.add(quest);

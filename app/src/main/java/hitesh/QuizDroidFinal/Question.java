@@ -10,6 +10,7 @@ public class Question extends Activity {
 	private String OPTB;
 	private String OPTC;
 	private String OPTD;
+    private String ODIF;
 
 	private String ANSWER;
 	
@@ -21,18 +22,18 @@ public class Question extends Activity {
 		OPTB = "";
 		OPTC = "";
 		OPTD = "";
-
+        ODIF = "";
 		ANSWER = "";
 
 	}
 
-	public Question(String qUESTION, String oPTA, String oPTB, String oPTC, String oPTD, String aNSWER) {
+	public Question(String qUESTION, String oPTA, String oPTB, String oPTC, String oPTD, String oDIF, String aNSWER) {
 		QUESTION = qUESTION;
 		OPTA = oPTA;
 		OPTB = oPTB;
 		OPTC = oPTC;
 		OPTD = oPTD;
-
+        ODIF = oDIF;
 		ANSWER = aNSWER;
 
 	}
@@ -61,6 +62,10 @@ public class Question extends Activity {
 		return OPTD;
 	}
 
+    public String getODIF() {
+        return ODIF;
+    }
+
 	public String getANSWER() {
 		return ANSWER;
 	}
@@ -88,6 +93,10 @@ public class Question extends Activity {
 	public void setOPTD(String oPTD) {
 		OPTD = oPTD;
 	}
+
+    public void setODIF(String oDIF) {
+        ODIF = oDIF;
+    }
 
 	public void setANSWER(String aNSWER) {
 		ANSWER = aNSWER;

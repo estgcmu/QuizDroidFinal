@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         Intent ranking_activity = new Intent (this, RankingActivity.class);
         startActivity(ranking_activity);
     }
-
+//teste
     public void button_perfil(View v){
         Intent perfil_activity = new Intent (this, PerfilActivity.class);
         startActivity(perfil_activity);

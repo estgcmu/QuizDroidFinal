@@ -38,7 +38,7 @@ public class QuizHelper extends SQLiteOpenHelper {
 				+ KEY_OPTB + " TEXT, " + KEY_OPTC + " TEXT, " + KEY_OPTD + " TEXT, " + KEY_ODIF + " TEXT " +")";
 		db.execSQL(sql);
 		addQuestion();
-		// db.close();
+        //db.close();
 	}
 
 	private void addQuestion() {
@@ -222,7 +222,7 @@ public class QuizHelper extends SQLiteOpenHelper {
 
 		// Inserting Row
 		dbase.insert(TABLE_QUEST, null, values);
-	}
+    }
     //CONSULTA PERUGUNTAS POR NIVEL DE DIFICULDADE
 	public List<Question> getAllQuestions() {
 		List<Question> quesList = new ArrayList<Question>();
@@ -245,7 +245,7 @@ public class QuizHelper extends SQLiteOpenHelper {
 
             quesList.add(quest);
         } while (cursor.moveToNext());
-        //cursor.close();
+        cursor.close();
         // return quest list
 		return quesList;
 

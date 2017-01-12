@@ -16,6 +16,10 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_bar_title_item.xml"
     },
     {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_perfil.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_perfil.xml"
+    },
+    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_mode_bar.xml"
     },
@@ -34,6 +38,10 @@
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -68,6 +76,10 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_result.xml"
     },
     {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_nives.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_nives.xml"
+    },
+    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_list_menu_item_layout.xml"
     },
@@ -86,6 +98,10 @@
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_ranking.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_ranking.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",

@@ -3,7 +3,6 @@ package cmu.QuizDroidFinal;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,7 +28,7 @@ public class ResultActivity extends Activity {
 
 	public void playagain(View o) {
 
-			Intent intent = new Intent(this, QuestionActivity.class);
+			Intent intent = new Intent(this, MainActivity.class);
 
 			startActivity(intent);
 

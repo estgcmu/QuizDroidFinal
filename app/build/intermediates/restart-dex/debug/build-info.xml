@@ -5,33 +5,40 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="193138272946566"
+    timestamp="203535898522311"
     token="-8880430854235795509"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="503" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="305" />
+        duration="0" />
     <task
         name="verifier"
-        duration="23" />
+        duration="0" />
 
     <artifact
-        location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="193138272946566"
+        timestamp="203416054484990"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="203535898522311"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

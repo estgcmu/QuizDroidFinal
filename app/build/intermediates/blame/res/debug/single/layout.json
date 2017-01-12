@@ -36,10 +36,6 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_expanded_menu_layout.xml"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_game.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_game.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",

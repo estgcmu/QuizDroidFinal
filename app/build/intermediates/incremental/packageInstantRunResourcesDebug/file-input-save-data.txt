@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jan 12 18:19:51 WET 2017
+#Thu Jan 12 18:51:42 WET 2017
 122.file=/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_edit_text_material.xml
 60.set=ANDROID_RESOURCE
 52.set=ANDROID_RESOURCE

@@ -12,7 +12,7 @@ public class NivesActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nives);
-    }
+}
 
 
     public void button_novo_jogo_facil(View v){

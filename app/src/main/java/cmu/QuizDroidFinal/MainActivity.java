@@ -15,13 +15,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
     public void button_niveis(View v){
         Intent niveis_activity = new Intent (this, NivesActivity.class);
         startActivity(niveis_activity);
+
     }
 
     public void button_ranking(View v){

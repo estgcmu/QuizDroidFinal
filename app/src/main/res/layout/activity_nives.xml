@@ -41,5 +41,17 @@
         android:layout_alignEnd="@+id/button_novo_jogo_moderado"
         android:layout_marginTop="34dp" />
 
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_novo_jogo_moderado"
+        android:layout_alignLeft="@+id/button_novo_jogo_dificil"
+        android:layout_alignStart="@+id/button_novo_jogo_dificil"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="59dp"
+        android:id="@+id/fName" />
+
 
 </RelativeLayout>

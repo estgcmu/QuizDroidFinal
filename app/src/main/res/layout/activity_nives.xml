@@ -8,50 +8,57 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#2c498c"
     tools:context="cmu.QuizDroidFinal.NivesActivity">
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/button_novo_jogo_facil"
         android:onClick="button_novo_jogo_facil"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
         android:text="Facil" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
         android:id="@+id/button_novo_jogo_moderado"
         android:onClick="button_novo_jogo_moderado"
         android:text="Moderado"
         android:layout_below="@+id/button_novo_jogo_dificil"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="28dp" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp" />
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
         android:id="@+id/button_novo_jogo_dificil"
         android:onClick="button_novo_jogo_dificil"
         android:text="Dificil"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/button_novo_jogo_facil"
-        android:layout_alignRight="@+id/button_novo_jogo_moderado"
-        android:layout_alignEnd="@+id/button_novo_jogo_moderado"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
 
     <TextView
-        android:text="TextView"
+        android:text="Selecciona o nivel em que pretendes jogar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_novo_jogo_moderado"
-        android:layout_alignLeft="@+id/button_novo_jogo_dificil"
-        android:layout_alignStart="@+id/button_novo_jogo_dificil"
-        android:layout_marginLeft="49dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="59dp"
-        android:id="@+id/fName" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Texto"
+        android:textSize="30sp"
+        android:textColor="@color/bright_foreground_inverse_material_light" />
 
 
 </RelativeLayout>

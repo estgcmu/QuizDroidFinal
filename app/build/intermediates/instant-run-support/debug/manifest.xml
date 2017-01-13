@@ -11,10 +11,13 @@
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="cmu.QuizDroidFinal.MainActivity" >
+        <activity
+            android:name="cmu.QuizDroidFinal.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,9 +32,18 @@
             android:name="cmu.QuizDroidFinal.ResultActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-        <activity android:name="cmu.QuizDroidFinal.NivesActivity" />
-        <activity android:name="cmu.QuizDroidFinal.PerfilActivity" />
-        <activity android:name="cmu.QuizDroidFinal.RankingActivity" />
+        <activity
+            android:name="cmu.QuizDroidFinal.NivesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cmu.QuizDroidFinal.PerfilActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cmu.QuizDroidFinal.RankingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

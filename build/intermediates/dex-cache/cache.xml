@@ -2,22 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1_f1dfeebc67306041077bbbbfdf3a01b944ac54fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="10873dac6e2e5e177c376619e0168ef8de4c0f95">
-        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.1.1_4dbb9b17b7945c2e1bc7b31638beeb16b2eeb4f2/classes.dex" />
+        sha1="afadb93e4ae57414bd852d5c6fcaf53cc5b2276c">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8.jar" />
     </item>
     <item
         is-multidex="true"
@@ -29,13 +29,22 @@
         <dex dex="/Users/joaosoares/Desktop/Asimplegame/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.1.1_62a8355e29166f76bfd308efe777cea18a984432/classes.dex" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="202de2d5c1bb48f282e70fd18e73b61eb8e2d265">
-        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b/classes.dex" />
+        sha1="acafe082fed9dc0a73a508e54e05fbfe2b75b9ba">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.1.1_9e6028698c143d7f11faad1a7829538c8aa9c146.jar" />
     </item>
     <item
         is-multidex="true"
@@ -74,13 +83,13 @@
         <dex dex="/Users/joaosoares/Desktop/Asimplegame/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.1.1_7410665641d8cc1c3e6f7d4e92045c722dbf6123/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        is-multidex="false"
+        jar="/Users/joaosoares/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.1.1_9e6028698c143d7f11faad1a7829538c8aa9c146/classes.dex" />
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1_5950138f4eea6ef5816e84bb17d7e368906105a8.jar" />
     </item>
     <item
         is-multidex="true"
@@ -92,13 +101,13 @@
         <dex dex="/Users/joaosoares/Desktop/Asimplegame/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1d64e5e3ed9cdc2ec7e6c48294d6065a8242f7ed/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        is-multidex="false"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.1.1_f1dfeebc67306041077bbbbfdf3a01b944ac54fb/classes.dex" />
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.1.1_4dbb9b17b7945c2e1bc7b31638beeb16b2eeb4f2.jar" />
     </item>
 
 </items>

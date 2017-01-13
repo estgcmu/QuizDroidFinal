@@ -32,11 +32,16 @@ public class MainActivity extends Activity {
         startActivity(perfil_activity);
     }
 
-
-
-
-
+    public void button_administracao(View v){
+        Intent administracao_activity = new Intent (this, AdministracaoActivity.class);
+        startActivity(administracao_activity);
     }
+
+
+
+
+
+}
 
 
 

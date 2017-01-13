@@ -50,18 +50,7 @@ public class QuestionActivity extends Activity {
         scored = (TextView) findViewById(R.id.score);
         nivel = (TextView) findViewById(R.id.nivel);
 
-
-        // the timer
-        //times = (TextView) findViewById(R.id.timers);
-
-
-        // method which will set the things up for our game
         setQuestionView();
-        //times.setText("00:02:00");
-
-        // A timer of 60 seconds to play for, with an interval of 1 second (1000 milliseconds)
-        //CounterClass timer = new CounterClass(60000, 1000);
-        //timer.start();
 
         // button click listeners
         button1.setOnClickListener(new View.OnClickListener() {
@@ -132,6 +121,13 @@ public class QuestionActivity extends Activity {
             Bundle b = new Bundle();
             b.putInt("score", score); // Your score
             intent.putExtras(b); // Put your score to your next
+
+            String texto = "OLA";
+            Bundle c = new Bundle();
+            c.putString("texto", texto); // Your score
+            intent.putExtras(c); // Put your score to your next
+
+
             startActivity(intent);
             finish();
         }

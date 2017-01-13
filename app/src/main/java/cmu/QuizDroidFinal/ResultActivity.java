@@ -17,12 +17,15 @@ public class ResultActivity extends Activity {
 		//TextView textResult = (TextView) findViewById(R.id.textResult);
 		TextView textScore = (TextView) findViewById(R.id.textScore); // Imprime o Score final
 
-		Bundle b = getIntent().getExtras();
+		//Bundle b = getIntent().getExtras();
 
-		int score = b.getInt("score");
+		//int score = b.getInt("score");
+
+		Bundle c = getIntent().getExtras();
+		String texto = c.getString("Texto");
 
         //textResult.setText("Thanks for playing my game.");
-		textScore.setText(score+" €");
+		//textScore.setText(score+" €");
 
 	}
 

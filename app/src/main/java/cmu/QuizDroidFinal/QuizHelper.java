@@ -38,7 +38,6 @@ public class QuizHelper extends SQLiteOpenHelper {
 				+ KEY_OPTB + " TEXT, " + KEY_OPTC + " TEXT, " + KEY_OPTD + " TEXT, " + KEY_ODIF + " TEXT " +")";
 		db.execSQL(sql);
 		addQuestion();
-        //db.close();
 	}
 
 	private void addQuestion() {

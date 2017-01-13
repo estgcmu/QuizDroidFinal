@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="19"
-    density="hdpi"
+    abi="x86"
+    api-level="24"
+    density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="228197835594692"
+    timestamp="247455018897434"
     token="-8880430854235795509"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="440" />
+        duration="312" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="952" />
     <task
         name="instant-run-transform"
-        duration="47" />
+        duration="98" />
     <task
         name="verifier"
-        duration="2" />
+        duration="5" />
 
     <artifact
-        location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="228197835594692"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="245577036583106"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="247455018897434"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

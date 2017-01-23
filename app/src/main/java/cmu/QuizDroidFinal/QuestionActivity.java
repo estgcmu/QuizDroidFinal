@@ -11,13 +11,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class QuestionActivity extends Activity {
     List<Question> quesList;
+
+
     int score = 0;
     int qid = 0;
-    //int number_quest = 0;
+
 
 
     Question currentQ;
@@ -30,36 +33,29 @@ public class QuestionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        QuizHelper db = new QuizHelper(this);  // my question bank class
-        quesList = db.getAllQuestions();  // this will fetch all quetions
-        currentQ = quesList.get(qid); // the current question
+        QuizHelper db = new QuizHelper(this);  // Acesso a pergunta
+        quesList = db.getAllQuestions();  // Carrega Perguntas
+        currentQ = quesList.get(qid); // Pergunta atual
 
-        // the textview in which the question will be displayed
+        // Mostra pergunta na respetiva textView
         txtQuestion = (TextView) findViewById(R.id.txtQuestion);
-
-
-        // the three buttons,
-        // the idea is to set the text of three buttons with the options from question bank
+        // Botões
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
-
-
-        // the textview in which score will be displayed
+        // TextView Score
         scored = (TextView) findViewById(R.id.score);
+        // TextView Nivel
         nivel = (TextView) findViewById(R.id.nivel);
-
         setQuestionView();
 
-        // button click listeners
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                // passing the button text to other method
-                // to check whether the anser is correct or not
-                // same for all three buttons
+
                 getAnswer(button1.getText().toString());
             }
         });
@@ -89,45 +85,36 @@ public class QuestionActivity extends Activity {
     public void getAnswer(String AnswerString) {
         if (currentQ.getANSWER().equals(AnswerString)) {
 
-            // if conditions matches increase the int (score) by 1
-            // and set the text of the score view
+            //caso se verifique adiciona pontuação
             score = score + 10000;
             scored.setText(score + " €");
+
+            Toast.makeText(getApplicationContext(),"A sua resposta está correta!", Toast.LENGTH_SHORT).show();
         } else {
 
-            // if unlucky start activity and finish the game
+            // Recomeça o jogo
 
             Intent intent = new Intent(QuestionActivity.this, ResultActivity.class);
 
-            // passing the int value
+
             Bundle b = new Bundle();
-            b.putInt("score", score); // Your score
-            intent.putExtras(b); // Put your score to your next
+            b.putInt("score", score);
+            intent.putExtras(b);
             startActivity(intent);
             finish();
 
         }
-        // if (qid < 6) {
-        if (score < 100000) {
 
-            // if questions are not over then do this
+        if (score < 100000) {
             currentQ = quesList.get(qid);
             setQuestionView();
         } else {
 
-            // if over do this
-            Intent intent = new Intent(QuestionActivity.this,
-                    ResultActivity.class);
+
+            Intent intent = new Intent(QuestionActivity.this,ResultActivity.class);
             Bundle b = new Bundle();
-            b.putInt("score", score); // Your score
-            intent.putExtras(b); // Put your score to your next
-
-            String texto = "OLA";
-            Bundle c = new Bundle();
-            c.putString("texto", texto); // Your score
-            intent.putExtras(c); // Put your score to your next
-
-
+            b.putInt("score", score);
+            intent.putExtras(b);
             startActivity(intent);
             finish();
         }
@@ -142,8 +129,6 @@ public class QuestionActivity extends Activity {
 
 
     private void setQuestionView() {
-
-        // the method which will put all things together
         txtQuestion.setText(currentQ.getQUESTION());
         nivel.setText(currentQ.getODIF());
         button1.setText(currentQ.getOPTA());

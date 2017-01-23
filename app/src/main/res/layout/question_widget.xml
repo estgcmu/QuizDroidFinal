@@ -1,98 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#09C"
     android:padding="@dimen/widget_margin">
 
-    <LinearLayout
-        android:id="@+id/linearLayout12"
+
+    <Button
+        android:id="@+id/buttonWidget"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_style"
+        android:text="Jogar"
+        android:textColor="#fff"
+        android:textSize="20.0sp"
+        android:layout_below="@+id/txtQuestionWidget"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtQuestionWidget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.60"
-        android:orientation="vertical"
-        android:weightSum="1" >
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Nova Pergunta Disponivel"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.40" >
 
-            <TextView
-                android:id="@+id/txtQuestionWidget"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
-                android:text="Pergunta"
-                android:textColor="#ffffff"
-                android:textSize="20.0sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.20"
-            android:orientation="vertical"
-            android:weightSum="1" >
-
-            <Button
-                android:id="@+id/button1Widget"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_style"
-                android:gravity="center"
-                android:text="Opção 1"
-                android:textColor="#fff"
-                android:textSize="20.0sp" />
-
-            <Button
-                android:id="@+id/button2Widget"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_style"
-                android:gravity="center"
-                android:text="Opção 2"
-                android:textColor="#fff"
-                android:textSize="20.0sp" />
-
-            <Button
-                android:id="@+id/button3Widget"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_style"
-                android:gravity="center"
-                android:text="Opção 3"
-                android:textColor="#fff"
-                android:textSize="20.0sp" />
-
-            <Button
-                android:id="@+id/button4Widget"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_style"
-                android:gravity="center"
-                android:text="Opção 4"
-                android:textColor="#fff"
-                android:textSize="20.0sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

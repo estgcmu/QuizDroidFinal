@@ -22,6 +22,28 @@
         android:text="RANKING"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
+    <TextView
+        android:id="@+id/txtPontuacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:text="30 0000 000€"
+        android:textColor="#ffffff"
+        android:textSize="40.0sp" />
+    <TextView
+        android:id="@+id/txtPontuacaoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:text="Já Ganhas-te"
+        android:textColor="#ffffff"
+        android:textSize="40.0sp" />
 
     <ImageView
         android:layout_width="200dp"

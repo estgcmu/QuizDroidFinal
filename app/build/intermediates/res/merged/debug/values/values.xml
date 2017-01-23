@@ -187,7 +187,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="add_widget">Add widget</string>
     <string name="app_name">QuizDroid</string>
-    <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_text">QuizDroid</string>
     <string name="configure">Configure</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

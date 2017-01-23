@@ -13,26 +13,15 @@ public class ResultActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_result);
-
-		//TextView textResult = (TextView) findViewById(R.id.textResult);
 		TextView textScore = (TextView) findViewById(R.id.textScore); // Imprime o Score final
-
-		//Bundle b = getIntent().getExtras();
-
-		//int score = b.getInt("score");
-
-		Bundle c = getIntent().getExtras();
-		String texto = c.getString("Texto");
-
-        //textResult.setText("Thanks for playing my game.");
-		//textScore.setText(score+" €");
+		Bundle b = getIntent().getExtras();
+		int score = b.getInt("score");
+		textScore.setText(score+" €");
 
 	}
 
 	public void playagain(View o) {
-
 			Intent intent = new Intent(this, MainActivity.class);
-
 			startActivity(intent);
 
 

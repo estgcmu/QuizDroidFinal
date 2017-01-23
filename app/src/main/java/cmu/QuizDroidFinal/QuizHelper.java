@@ -199,6 +199,18 @@ public class QuizHelper extends SQLiteOpenHelper {
         // END
 	}
 
+    public void adicionar_informacao (String pergunta, String opcao_1, String opcao_2, String opcao_3, String opcao_4, String opcao_correta, SQLiteDatabase db){
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_ANSWER, pergunta);
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_OPTA,opcao_1);
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_OPTB,opcao_2);
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_OPTC,opcao_3);
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_OPTD,opcao_4);
+        contentValues.put(Pergunta_insert.NovaPergunta.KEY_ODIF,opcao_correta);
+        db.insert(Pergunta_insert.NovaPergunta.TABLE_NAME,null,contentValues);
+    }
+
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
 		// Drop older table if existed
@@ -225,11 +237,11 @@ public class QuizHelper extends SQLiteOpenHelper {
     //CONSULTA PERUGUNTAS POR NIVEL DE DIFICULDADE
 	public List<Question> getAllQuestions() {
 		List<Question> quesList = new ArrayList<Question>();
-		// Select All Query
+		// Selecciona a query
 		String selectQuery = "SELECT  * FROM " + TABLE_QUEST +" WHERE " + KEY_ODIF + "='FACIL' ORDER BY RANDOM() LIMIT 0,10";
 		dbase = this.getReadableDatabase();
 		Cursor cursor = dbase.rawQuery(selectQuery, null);
-		// looping through all rows and adding to list
+		// LOOP
 		if (cursor.moveToFirst()) do {
             Question quest = new Question();
             quest.setID(cursor.getInt(0));
@@ -245,7 +257,7 @@ public class QuizHelper extends SQLiteOpenHelper {
             quesList.add(quest);
         } while (cursor.moveToNext());
         cursor.close();
-        // return quest list
+        // devolve lista
 		return quesList;
 
 	}

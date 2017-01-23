@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import cmu.QuizDroidFinal.MainActivity;
 import cmu.QuizDroidFinal.Question;
 import cmu.QuizDroidFinal.QuestionActivity;
 import cmu.QuizDroidFinal.QuizHelper;
@@ -52,14 +53,15 @@ public class QuestionWidget extends AppWidgetProvider {
             String text = "Nova Pergunta Disponivel";
             views.setTextViewText(R.id.txtQuestionWidget,text);
 
-            Intent openApp = new Intent(context, QuestionActivity.class);
+            Intent openApp = new Intent(context, QuestionWidget.class);
             PendingIntent pIntent = PendingIntent.getActivity(context, 0, openApp, 0);
-            views.setOnClickPendingIntent(R.id.button1Widget,pIntent);
+            views.setOnClickPendingIntent(R.id.buttonWidget, pIntent);
 
 
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-            PendingIntent myPending = PendingIntent.getActivity(context, 1, intent, 0);
-            views.setOnClickPendingIntent(R.id.button2Widget, myPending);
+            //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            //PendingIntent myPending = PendingIntent.getActivity(context, 1, intent, 0);
+
+            //views.setOnClickPendingIntent(R.id.button2Widget, myPending);
 
             appWidgetManager.updateAppWidget(appWidgetIds[i], views);
 

@@ -20,8 +20,10 @@ public class NiveisActivity extends Activity {
     }
 
     public void button_novo_jogo_moderado(View v){
+
         Intent novo_jogo_moderado_activity = new Intent (this, QuestionActivity.class);
         startActivity(novo_jogo_moderado_activity);
+
     }
     public void button_novo_jogo_dificil(View v){
         Intent novo_jogo_dificil_activity = new Intent (this, QuestionActivity.class);

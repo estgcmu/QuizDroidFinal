@@ -1,10 +1,6 @@
 [
     {
-        "merged": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\joaosoares\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\joaosoares\\AndroidStudioProjects\\QuizDroidFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]

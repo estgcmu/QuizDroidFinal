@@ -57,7 +57,8 @@
         <activity android:name=".AdicionarActivity" />
         <activity android:name=".QuestionActivityFacil" />
         <activity android:name=".QuestionActivityModerado" />
-        <activity android:name=".QuestionActivityDificil"></activity>
+        <activity android:name=".QuestionActivityDificil" />
+        <activity android:name=".PreferenceActivity"></activity>
     </application>
 
 </manifest>

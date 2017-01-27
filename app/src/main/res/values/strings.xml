@@ -3,4 +3,6 @@
     <string name="appwidget_text">QuizDroid</string>
     <string name="configure">Configure</string>
     <string name="add_widget">Add widget</string>
+    <string name="edit_preference_title">Username</string>
+    <string name="save">Gravar username</string>
 </resources>

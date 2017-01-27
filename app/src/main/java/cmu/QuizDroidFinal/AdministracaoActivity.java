@@ -17,5 +17,14 @@ public class AdministracaoActivity extends Activity {
         Intent adicionar_activity = new Intent(this, AdicionarActivity.class);
         startActivity(adicionar_activity);
     }
+
+    public void button_preferences(View v) {
+        Intent preferenciasaa = new Intent(this, PreferenceActivity.class);
+        startActivity(preferenciasaa);
+    }
+
+
+
+
 }
 

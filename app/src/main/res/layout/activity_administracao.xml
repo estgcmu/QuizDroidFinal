@@ -14,7 +14,7 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_adicionar"
         android:onClick="button_adicionar"
@@ -30,6 +30,18 @@
         android:onClick="button_eliminar"
         android:text="Eliminar"
         android:layout_below="@+id/button_atualizar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:id="@+id/button_preferences"
+        android:onClick="button_preferences"
+        android:text="Preferências"
+        android:layout_below="@+id/button_eliminar"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_style"
         android:gravity="center"

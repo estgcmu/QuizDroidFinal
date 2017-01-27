@@ -29,7 +29,7 @@ public class QuestionActivityModerado extends Activity {
     //int qid = 0;
     int qid_2 = 0;
     //int number_quest = 0;
- // teste push
+    //Teste push 2
 
     Question currentQ;
     TextView txtQuestion, scored, nivel;

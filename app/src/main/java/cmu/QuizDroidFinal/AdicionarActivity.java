@@ -41,8 +41,9 @@ public class AdicionarActivity extends Activity {
 
         String opcao_correta = opcao_correta_db.getText().toString();
         quizHelper = new QuizHelper(context);
-            sqLiteDatabase = quizHelper.getWritableDatabase();
-        quizHelper.adicionar_informacao(pergunta,opcao_1,opcao_2,opcao_3,opcao_4,opcao_correta,sqLiteDatabase);
+
+       // sqLiteDatabase = quizHelper.getWritableDatabase();
+        //quizHelper.adicionar_informacao(pergunta,opcao_1,opcao_2,opcao_3,opcao_4,opcao_correta,sqLiteDatabase);
         Toast.makeText(getBaseContext(),"Pergunta Adicionada",Toast.LENGTH_SHORT).show();
         quizHelper.close();
 

@@ -15,18 +15,18 @@ public class NiveisActivity extends Activity {
 
 
     public void button_novo_jogo_facil(View v){
-        Intent novo_jogo_facil_activity = new Intent (this, QuestionActivity.class);
+        Intent novo_jogo_facil_activity = new Intent (this, QuestionActivityFacil.class);
         startActivity(novo_jogo_facil_activity);
     }
 
     public void button_novo_jogo_moderado(View v){
 
-        Intent novo_jogo_moderado_activity = new Intent (this, QuestionActivity.class);
+        Intent novo_jogo_moderado_activity = new Intent (this, QuestionActivityModerado.class);
         startActivity(novo_jogo_moderado_activity);
 
     }
     public void button_novo_jogo_dificil(View v){
-        Intent novo_jogo_dificil_activity = new Intent (this, QuestionActivity.class);
+        Intent novo_jogo_dificil_activity = new Intent (this, QuestionActivityDificil.class);
         startActivity(novo_jogo_dificil_activity);
     }
 

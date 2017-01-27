@@ -54,7 +54,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".AdministracaoActivity" />
-        <activity android:name=".AdicionarActivity"></activity>
+        <activity android:name=".AdicionarActivity" />
+        <activity android:name=".QuestionActivityFacil" />
+        <activity android:name=".QuestionActivityModerado" />
+        <activity android:name=".QuestionActivityDificil"></activity>
     </application>
 
 </manifest>

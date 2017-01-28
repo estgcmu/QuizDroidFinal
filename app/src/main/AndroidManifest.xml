@@ -58,7 +58,6 @@
         <activity android:name=".QuestionActivityFacil" />
         <activity android:name=".QuestionActivityModerado" />
         <activity android:name=".QuestionActivityDificil" />
-        <activity android:name=".PreferenceActivity" />
         <activity android:name=".PreferencesActivity"></activity>
     </application>
 

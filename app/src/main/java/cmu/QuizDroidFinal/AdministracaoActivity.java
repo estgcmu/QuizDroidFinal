@@ -19,12 +19,14 @@ public class AdministracaoActivity extends Activity {
     }
 
     public void button_preferences(View v) {
-        Intent preferenciasaa = new Intent(this, PreferenceActivity.class);
+        Intent preferenciasaa = new Intent(this, PreferencesActivity.class);
         startActivity(preferenciasaa);
     }
 
-
-
+    public void button_menu_principal(View v) {
+        Intent menu = new Intent(this, MainActivity.class);
+        startActivity(menu);
+    }
 
 }
 

@@ -100,6 +100,10 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_list_menu_item_radio.xml"
     },
     {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_preferences.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_preferences.xml"
+    },
+    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_dialog_title_material.xml"
     },

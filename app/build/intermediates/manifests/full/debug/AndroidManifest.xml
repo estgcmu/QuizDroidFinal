@@ -65,6 +65,7 @@
         <activity android:name="cmu.QuizDroidFinal.QuestionActivityModerado" />
         <activity android:name="cmu.QuizDroidFinal.QuestionActivityDificil" />
         <activity android:name="cmu.QuizDroidFinal.PreferenceActivity" />
+        <activity android:name="cmu.QuizDroidFinal.PreferencesActivity" />
     </application>
 
 </manifest>

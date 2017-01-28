@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preferences"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#2c498c"
+    tools:context="cmu.QuizDroidFinal.PreferencesActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="PREFERÊNCIAS"
+        android:textColor="#ffffff"
+        android:textSize="40.0sp"
+        android:id="@+id/textView" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:gravity="left"
+        android:text="Nickname"
+        android:textColor="#ffffff"
+        android:textSize="30.0sp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="225dp"
+        android:gravity="left"
+        android:text="Nova Pergunta"
+        android:textColor="#ffffff"
+        android:textSize="30.0sp"
+        android:id="@+id/textView3"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:background="@drawable/button_style"
+        android:id="@+id/next"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="#fff"
+        android:onClick="save"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/next"
+        android:layout_alignStart="@+id/next" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri|textPersonName"
+        android:gravity="left"
+        android:text="EDITENICKNAME"
+        android:ems="10"
+        android:id="@+id/userName"
+        android:textColor="#fff"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView2"
+        android:textSize="30.0sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:text="Tempo em Segundos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="30.0sp"
+        android:id="@+id/tempoE"
+        android:layout_marginTop="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

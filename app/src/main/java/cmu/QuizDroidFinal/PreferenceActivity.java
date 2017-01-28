@@ -41,8 +41,8 @@ public class PreferenceActivity extends Activity implements OnClickListener {
         //txtListLanguage = (TextView) findViewById(R.id.txtListLanguage);
 
         txtUsername = (EditText) findViewById(R.id.txtUsername);
-        Button btnSave_preference = (Button) findViewById(R.id.btnSave_preference);
-        btnSave_preference.setOnClickListener(this);
+        Button btnSave_preferences = (Button) findViewById(R.id.btnSave_preference);
+        btnSave_preferences.setOnClickListener(this);
     }
 
     @Override
@@ -74,7 +74,7 @@ public class PreferenceActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.btnSave && txtUsername.getText()!=null) {
+        if(v.getId() == R.id.btnSave_preference && txtUsername.getText()!=null) {
             // Obter a refer�ncia para as prefer�ncias assim como para o Editor das mesmas.
             SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(this);
             SharedPreferences.Editor mEditor = mSettings.edit();

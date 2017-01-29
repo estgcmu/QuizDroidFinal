@@ -1,7 +1,7 @@
-#Sun Jan 29 01:31:14 WET 2017
-base.0=/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b/classes.dex
-base.1=/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b
-file.0=/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8/classes.dex
+#Sun Jan 29 18:04:31 GMT 2017
+base.0=C\:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0f8d58cd947a82659d38764900e96911c8b5a1bc
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_bc4e1574d99c67c39b3c7455717d9835b8d553e6\\classes.dex
+base.1=C\:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_bc4e1574d99c67c39b3c7455717d9835b8d553e6
+file.0=C\:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0f8d58cd947a82659d38764900e96911c8b5a1bc\\classes.dex

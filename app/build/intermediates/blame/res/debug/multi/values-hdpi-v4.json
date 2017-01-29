@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-hdpi-v4/values.xml",
+                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-hdpi-v4\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

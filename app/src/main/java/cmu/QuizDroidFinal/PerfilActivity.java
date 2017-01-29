@@ -45,14 +45,14 @@ public class PerfilActivity extends Activity {
 
 
     }
-    public void menu(View view){
+   // public void menu(View view){
 
         //Toast.makeText(this,"Previous", Toast.LENGTH_LONG).show();
-        Intent intent=new Intent(this,AdministracaoActivity.class);
-        startActivity(intent);
+     //   Intent intent=new Intent(this,AdministracaoActivity.class);
+       // startActivity(intent);
 
 
-    }
+    //}
 }
 
 

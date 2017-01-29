@@ -60,6 +60,10 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_ver_perguntas.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_ver_perguntas.xml"
+    },
+    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_adicionar.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_adicionar.xml"
     },
@@ -104,6 +108,10 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_preferences.xml"
     },
     {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_result_win_actvity.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_result_win_actvity.xml"
+    },
+    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_dialog_title_material.xml"
     },
@@ -134,10 +142,6 @@
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_preference.xml",
-        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_preference.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/activity_question_dificil.xml",

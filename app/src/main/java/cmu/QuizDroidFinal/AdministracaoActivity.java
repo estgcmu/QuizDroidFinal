@@ -17,15 +17,14 @@ public class AdministracaoActivity extends Activity {
         Intent adicionar_activity = new Intent(this, AdicionarActivity.class);
         startActivity(adicionar_activity);
     }
+    public void button_atualizar(View v) {
+        Intent ver_perguntas = new Intent(this, VerPerguntasActivity.class);
+        startActivity(ver_perguntas);
+    }
 
     public void button_preferences(View v) {
         Intent preferenciasaa = new Intent(this, PreferencesActivity.class);
         startActivity(preferenciasaa);
-    }
-
-    public void button_menu_principal(View v) {
-        Intent menu = new Intent(this, MainActivity.class);
-        startActivity(menu);
     }
 
 }

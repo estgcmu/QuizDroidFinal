@@ -1,6 +1,7 @@
 package cmu.QuizDroidFinal;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -8,12 +9,20 @@ import android.view.View;
 
 public class MainActivity extends Activity {
 
+MediaPlayer mp;
+@Override
+protected void onPause(){
 
-
+    super.onPause();
+    mp.release();
+}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.spielende_lang);
+        mp.start();
     }
 
     public void button_niveis(View v){

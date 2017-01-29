@@ -42,23 +42,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="400dp"
         android:gravity="center"
-        android:text="RICARDO"
+        android:text="Pontuação"
         android:textColor="#ffffff"
         android:textSize="35.0sp"
         android:textStyle="normal|bold" />
-
-    <Button
-        android:text="Menu"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEditUsername"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_style"
-        android:layout_marginTop="135dp"
-        android:textColor="#fff"
-        android:onClick="menu"
-        android:id="@+id/button" />
-
 
 
     <ImageView

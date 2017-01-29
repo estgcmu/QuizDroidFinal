@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.view.View;
@@ -39,14 +39,6 @@ public class PreferencesActivity extends Activity {
         editor.commit();
 
         Toast.makeText(this,"Informação guardada com sucesso", Toast.LENGTH_LONG).show();
-
     }
 
-    public void next(View view)
-    {
-
-        //Toast.makeText(this,"Next",Toast.LENGTH_LONG).show();
-        Intent intent=new Intent (this,AdministracaoActivity.class);
-        startActivity(intent);
     }
-}

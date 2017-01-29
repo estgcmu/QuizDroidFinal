@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.TextView;
 
 
 public class QuizHelper extends SQLiteOpenHelper {
@@ -40,6 +41,8 @@ public class QuizHelper extends SQLiteOpenHelper {
     public QuizHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
+
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -255,6 +258,22 @@ public class QuizHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public void insert_question_facil (String pergunta_db, String opcao_correta_db, String opcao1, String opcao2, String opcao3, String opcao4, String dif){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("question", pergunta_db);
+        contentValues.put("answer",opcao_correta_db);
+        contentValues.put("opta",opcao1);
+        contentValues.put("optb",opcao2);
+        contentValues.put("optc",opcao3);
+        contentValues.put("optd",opcao4);
+        contentValues.put("odif",dif);
+        this.getWritableDatabase().insertOrThrow("quest_teste","",contentValues);
+
+
+
+    }
+
+
     // Adding new question FACIL
     public void addQuestion_FACIL(Question quest) {
         // SQLiteDatabase db = this.getWritableDatabase();
@@ -407,8 +426,20 @@ public class QuizHelper extends SQLiteOpenHelper {
 
         // return quest list
         return quest3List;
+    }
+
+        public void list_all_facil (TextView textView){
+
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL + " WHERE " + KEY_ODIF + " ='FACIL'",null);
+            textView.setText("");
+            while (cursor.moveToNext()){
+            textView.append(cursor.getString(1)+"\n");
+
+        }
+    }
 
     }
 
 
-}
+
+

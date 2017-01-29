@@ -110,6 +110,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="DIFICULDADE"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:id="@+id/editText_dif"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editText_opcao_correta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -121,7 +135,5 @@
         android:textColor="#ffffff"
         android:layout_above="@+id/editText_opcao_3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

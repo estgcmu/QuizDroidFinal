@@ -8,6 +8,8 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
@@ -65,8 +67,9 @@
         <activity android:name="cmu.QuizDroidFinal.QuestionActivityFacil" />
         <activity android:name="cmu.QuizDroidFinal.QuestionActivityModerado" />
         <activity android:name="cmu.QuizDroidFinal.QuestionActivityDificil" />
-        <activity android:name="cmu.QuizDroidFinal.PreferenceActivity" />
         <activity android:name="cmu.QuizDroidFinal.PreferencesActivity" />
+        <activity android:name="cmu.QuizDroidFinal.ResultWinActvity" />
+        <activity android:name="cmu.QuizDroidFinal.VerPerguntasActivity" />
     </application>
 
 </manifest>

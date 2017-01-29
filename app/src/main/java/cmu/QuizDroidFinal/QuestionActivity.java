@@ -90,6 +90,7 @@ public class QuestionActivity extends Activity {
             scored.setText(score + " €");
 
             Toast.makeText(getApplicationContext(),"A sua resposta está correta!", Toast.LENGTH_SHORT).show();
+
         } else {
 
             // Recomeça o jogo
@@ -108,6 +109,7 @@ public class QuestionActivity extends Activity {
         if (score < 100000) {
             currentQ = quesList.get(qid);
             setQuestionView();
+
         } else {
 
 

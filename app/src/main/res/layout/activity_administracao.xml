@@ -14,21 +14,21 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_adicionar"
         android:onClick="button_adicionar"
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
-        android:text="Adicionar" />
+        android:text="Perguntas Fácil" />
 
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:id="@+id/button_eliminar"
         android:onClick="button_eliminar"
-        android:text="Eliminar"
+        android:text="Perguntas Difícil"
         android:layout_below="@+id/button_atualizar"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_style"
@@ -47,24 +47,13 @@
         android:gravity="center"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp" />
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:id="@+id/button_menu_principal"
-        android:text="Menu"
-        android:layout_below="@+id/button_preferences"
-        android:onClick="button_menu_principal"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_style"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp" />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:id="@+id/button_atualizar"
         android:onClick="button_atualizar"
-        android:text="Atualizar"
+        android:text="Perguntas Moderado"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/button_adicionar"
         android:layout_marginTop="34dp"

@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -110,6 +111,8 @@ public class QuestionActivityFacil extends Activity{
             score = score + 10000;
             scored.setText(score + " €");
             Toast.makeText(getApplicationContext(),"A sua resposta está correta!", Toast.LENGTH_SHORT).show();
+            MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.correct_answser);
+            mp.start();
         } else {
 
             // if unlucky start activity and finish the game
@@ -134,7 +137,7 @@ public class QuestionActivityFacil extends Activity{
         } else {
 
             // if over do this
-            Intent intent = new Intent(QuestionActivityFacil.this, ResultActivity.class);
+            Intent intent = new Intent(QuestionActivityFacil.this, ResultWinActvity.class);
             Bundle b = new Bundle();
             b.putInt("score", score); // Your score
             intent.putExtras(b); // Put your score to your next

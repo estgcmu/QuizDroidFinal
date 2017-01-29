@@ -190,7 +190,7 @@ public class QuizHelper extends SQLiteOpenHelper {
         Question q50 = new Question("Quem escreveu o romance E Tudo o Vento Levou", "Margaret Mitchell", "Lauren Weisbergen", "Steve Berry", "Isaac Asimov", "MODERADO", "Margaret Mitchell");
         this.addQuestion_MODERADO(q50);
     }
-
+//dw
     private void addQuestion_DIFICIL(){
         //Add new question DIFICIL
         Question q51 = new Question("Que matemático e geógrafo grego calculou o perímetro da Terra em 240 a.C.?", "Descartes", "Sócrates", "Sófocles", "Eratóstenes", "DIFICIL", "Eratóstenes");

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_pergunta_detalhe"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="#2c498c"
+tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
+    <TextView
+        android:text="Pergunta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="0dp"
+        android:id="@+id/textviewpergunta"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:text="PERGUNTA"
+        android:id="@+id/txt_question"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textviewpergunta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+    <TextView
+        android:text="Opção 1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_opcao_1"
+        android:layout_below="@+id/txt_question"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Opção 1"
+        android:id="@+id/txt_opcao_1"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textview_opcao_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:text="Opção 2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_opcao_2"
+        android:layout_below="@+id/txt_opcao_1"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Opção 2"
+        android:id="@+id/txt_opcao_2"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textview_opcao_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:text="Opção 3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_opcao_3"
+        android:layout_below="@+id/txt_opcao_2"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Opção 3"
+        android:id="@+id/txt_opcao_3"
+        android:layout_below="@id/textview_opcao_3"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+         />
+    <TextView
+        android:text="Opção 4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_opcao_4"
+        android:layout_below="@+id/txt_opcao_3"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Opção 4"
+        android:id="@+id/txt_opcao_4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textview_opcao_4"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:text="Opção Correta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_opcao_correta"
+        android:layout_below="@+id/txt_opcao_4"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Opção Correta"
+        android:id="@+id/txt_opcao_correta"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textview_opcao_correta"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:text="Dificuldade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        android:id="@+id/textview_dificuldade"
+        android:layout_below="@+id/txt_opcao_correta"
+        />
+
+    <Button
+        android:text="Eliminar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/button_eliminar"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style_apagar"
+        android:onClick="eliminar_pergunta"/>
+
+    <Button
+        android:text="Editar Pergunta"
+        android:layout_above="@id/button_eliminar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_atualizar"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style"
+        android:onClick="update_pergunta"
+      />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="DIFICULDADE"
+        android:textSize="20sp"
+        android:id="@+id/txt_opcao_dif"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textview_dificuldade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+

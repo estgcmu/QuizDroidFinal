@@ -3,57 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.1.1_34dc477982bc83bdaf4d89385743d5bf3be5fa8a\classes.dex" />
+        sha1="97bb4b56fd218f050be346066813195bdc59ee70">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\TiagoPintoAndroid\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1ba637837373d5d4a75f252b27de863dde2819a5">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joaosoares/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.1.1_e35682ee17afbcccf9184bd1440e5c45a65f87b5\classes.dex" />
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.1.1_5950138f4eea6ef5816e84bb17d7e368906105a8/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b45a42835149323db4f9eb182cdc376505182c92">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bc4e1574d99c67c39b3c7455717d9835b8d553e6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="e94ec9fd55ebb00872ae832f975b4e8b307e8830">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0f8d58cd947a82659d38764900e96911c8b5a1bc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.1.1_01ca4651b1b980ec066a90a08773e9840f544231\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\TiagoPinto\AndroidStudioProjects\QuizDroidFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.1.1_2d8abcf27189d784d32db0bb2e5fb9232336a162\classes.dex" />
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.1.1_4dbb9b17b7945c2e1bc7b31638beeb16b2eeb4f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.1.1_9e6028698c143d7f11faad1a7829538c8aa9c146/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.1.1_f1dfeebc67306041077bbbbfdf3a01b944ac54fb/classes.dex" />
     </item>
 
 </items>

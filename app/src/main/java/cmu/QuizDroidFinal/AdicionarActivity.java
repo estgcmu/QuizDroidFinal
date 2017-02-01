@@ -40,10 +40,9 @@ public class AdicionarActivity extends Activity {
 
     public void inserir_pergunta(View view){
 
-         controller.insert_question_facil(
-                pergunta_db.getText().toString(),
-                opcao_correta_db.getText().toString(),
-                opcao1.getText().toString(),
+         controller.insert_question_facil(pergunta_db.getText().toString(),
+                         opcao_correta_db.getText().toString(),
+                 opcao1.getText().toString(),
                 opcao2.getText().toString(),
                 opcao3.getText().toString(),
                 opcao4.getText().toString(),

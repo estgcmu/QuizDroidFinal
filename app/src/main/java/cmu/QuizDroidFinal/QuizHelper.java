@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import static android.content.ContentValues.*;
 
 
 public class QuizHelper extends SQLiteOpenHelper {
@@ -35,13 +39,12 @@ public class QuizHelper extends SQLiteOpenHelper {
     private static final String KEY_ODIF = "odif"; // option dificuldade
 
     private static final String KEY_SCORE = "score";
-
+    private static final String KEY_ID_SCORE = "sid";
     private SQLiteDatabase dbase;
 
     public QuizHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
 
 
     @Override
@@ -64,22 +67,18 @@ public class QuizHelper extends SQLiteOpenHelper {
 
 
         String query = "CREATE TABLE IF NOT EXISTS " + TABLE_RANKING + " ( "
-                + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_SCORE
-                + " INTEGER, " +")";
+                + KEY_ID_SCORE + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_SCORE
+                + " TEXT" +")";
 
         db.execSQL(sql);
         db.execSQL(sql2);
         db.execSQL(sql3);
+        db.execSQL(query);
         addQuestion_FACIL();
         addQuestion_MODERADO();
         addQuestion_DIFICIL();
     }
 
-    //Insert Score to Ranking table
-    public void insertScore(double score) {
-        String query = "INSERT INTO Ranking(Score) VALUES("+score+")";
-        dbase.execSQL(query);
-    }
 
 
     //Add Question_Facil
@@ -190,7 +189,7 @@ public class QuizHelper extends SQLiteOpenHelper {
         Question q50 = new Question("Quem escreveu o romance E Tudo o Vento Levou", "Margaret Mitchell", "Lauren Weisbergen", "Steve Berry", "Isaac Asimov", "MODERADO", "Margaret Mitchell");
         this.addQuestion_MODERADO(q50);
     }
-//dw
+
     private void addQuestion_DIFICIL(){
         //Add new question DIFICIL
         Question q51 = new Question("Que matemático e geógrafo grego calculou o perímetro da Terra em 240 a.C.?", "Descartes", "Sócrates", "Sófocles", "Eratóstenes", "DIFICIL", "Eratóstenes");
@@ -253,9 +252,27 @@ public class QuizHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_QUEST_FACIL);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_QUEST_MODERADO);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_QUEST_DIFICIL);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_RANKING);
 
         // Create tables again
         onCreate(db);
+    }
+
+
+
+
+    //sid é o id
+    //score é a pontuacao
+
+    //Insert Score to Ranking table
+
+    public void insertScore ( String textScore) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("score", textScore);
+
+        this.getWritableDatabase().insertOrThrow("ranking","",contentValues);
+        //this.getWritableDatabase().execSQL("inser into ranking (score) values ("+userscore.getName()+")");
+
     }
 
     public void insert_question_facil (String pergunta_db, String opcao_correta_db, String opcao1, String opcao2, String opcao3, String opcao4, String dif){
@@ -268,9 +285,15 @@ public class QuizHelper extends SQLiteOpenHelper {
         contentValues.put("optd",opcao4);
         contentValues.put("odif",dif);
         this.getWritableDatabase().insertOrThrow("quest_teste","",contentValues);
+    }
+    //metodo eliminar
+    public void delete_question_facil (String pergunta_db){
+        this.getWritableDatabase().delete("quest_teste","question='"+pergunta_db+"'",null);
+    }
+    //update
+    public void update_question_facil (String txt_question, String new_question, String new_txt_opcao_1, String new_txt_opcao_2, String new_txt_opcao_3, String new_txt_opcao_4, String new_txt_opcao_correta, String new_txt_opcao_dif){
 
-
-
+        this.getWritableDatabase().execSQL("UPDATE quest_teste SET question='"+new_question+"', opta='"+new_txt_opcao_1+"', optb='"+new_txt_opcao_2+"' ,optc='"+new_txt_opcao_3+"', optd='"+new_txt_opcao_4+"' , answer='"+new_txt_opcao_correta+"' , odif='"+new_txt_opcao_dif+"'   WHERE question='"+txt_question+"'");
     }
 
 
@@ -427,18 +450,77 @@ public class QuizHelper extends SQLiteOpenHelper {
         // return quest list
         return quest3List;
     }
-
+        //listar perguntas em textview (PARA REMOVER)
         public void list_all_facil (TextView textView){
 
         Cursor cursor = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL + " WHERE " + KEY_ODIF + " ='FACIL'",null);
             textView.setText("");
             while (cursor.moveToNext()){
             textView.append(cursor.getString(1)+"\n");
+            textView.append(cursor.getString(2)+"\n");
 
         }
     }
 
+    public ArrayList<String> getAllItens(){
+        Cursor cursor_gettAllItens = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL,null);
+        ArrayList<String> itens = null;
+        if ( cursor_gettAllItens != null && cursor_gettAllItens.moveToFirst()){
+            itens = new ArrayList<String>();
+        }
+        do {
+            itens.add(cursor_gettAllItens.getString(1)); //localização do array que vai ver
+
+        }while (cursor_gettAllItens.moveToNext());
+
+        return itens;
     }
+    public Cursor pesquisaid (String id){
+        String args=(id);
+        return (getReadableDatabase()
+                .rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL + " WHERE " + KEY_ID + "=?" + args ,null));
+
+    }
+
+
+    //CONSULTA PERUGUNTAS POR NIVEL DE DIFICULDADE
+    public List<Question> getAllQuestions_edita() {
+        List<Question> quesList = new ArrayList<Question>();
+
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_QUEST_FACIL;
+
+
+        //if(button_novo_jogo_facil = TABLE_QUEST_FACIL)
+        dbase = this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) do {
+            Question quest = new Question();
+            quest.setID(cursor.getInt(0));
+            quest.setQUESTION(cursor.getString(1));
+            quest.setANSWER(cursor.getString(2));
+            quest.setOPTA(cursor.getString(3));
+            quest.setOPTB(cursor.getString(4));
+            quest.setOPTC(cursor.getString(5));
+            quest.setOPTD(cursor.getString(6));
+            quest.setODIF(cursor.getString(7));
+
+
+            quesList.add(quest);
+        } while (cursor.moveToNext());
+        cursor.close();
+
+        // return quest list
+        return quesList;
+
+    }
+
+
+
+
+
+    }
+
 
 
 

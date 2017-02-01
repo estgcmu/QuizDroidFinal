@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\src\\main\\res\\values-v14\\dimens.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/values-v14/dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 216,
+                        "startOffset": 209,
                         "endColumn": 43,
-                        "endOffset": 255
+                        "endOffset": 248
                     }
                 }
             },
@@ -31,7 +31,7 @@
                     "endOffset": 370
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-v14\\values.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v14/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -51,7 +51,7 @@
                     "endOffset": 441
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-v14\\values.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v14/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -70,7 +70,7 @@
                     "endOffset": 524
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-v14\\values.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v14/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -90,7 +90,7 @@
                     "endOffset": 934
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-v14\\values.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v14/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -111,7 +111,7 @@
                     "endOffset": 1356
                 },
                 "from": {
-                    "file": "C:\\TiagoPinto\\AndroidStudioProjects\\QuizDroidFinal\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.1.1\\res\\values-v14\\values.xml",
+                    "file": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values-v14/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,

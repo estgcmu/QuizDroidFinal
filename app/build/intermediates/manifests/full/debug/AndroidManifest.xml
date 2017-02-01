@@ -69,6 +69,7 @@
         <activity android:name="cmu.QuizDroidFinal.PreferencesActivity" />
         <activity android:name="cmu.QuizDroidFinal.ResultWinActvity" />
         <activity android:name="cmu.QuizDroidFinal.VerPerguntasActivity" />
+        <activity android:name="cmu.QuizDroidFinal.PerguntaDetalheActivity" />
     </application>
 
 </manifest>

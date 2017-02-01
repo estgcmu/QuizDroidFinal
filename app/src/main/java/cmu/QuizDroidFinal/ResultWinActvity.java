@@ -22,9 +22,13 @@ public class ResultWinActvity extends Activity{
         setContentView(R.layout.activity_result_win_actvity);
 
         TextView textScore = (TextView) findViewById(R.id.textScore); // Imprime o Score final
+
         Bundle b = getIntent().getExtras();
+
         int score = b.getInt("score");
+
         textScore.setText(score+" €");
+
         mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
         mp.start();
     }

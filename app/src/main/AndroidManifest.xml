@@ -62,7 +62,8 @@
         <activity android:name=".QuestionActivityDificil" />
         <activity android:name=".PreferencesActivity" />
         <activity android:name=".ResultWinActvity" />
-        <activity android:name=".VerPerguntasActivity"></activity>
+        <activity android:name=".VerPerguntasActivity" />
+        <activity android:name=".PerguntaDetalheActivity"></activity>
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class PreferencesActivity extends Activity {
-    public static final String DEFAULT="N/A";
+    public static final String DEFAULT="";
     EditText userName;
     EditText tempoE;
 

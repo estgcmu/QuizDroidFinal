@@ -11,30 +11,6 @@
     android:background="#2c498c"
     tools:context="cmu.QuizDroidFinal.AdicionarActivity">
 
-    <Button
-        android:text="Adicionar"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:id="@+id/button_adicionar"
-        android:textColor="#ffffff"
-        android:background="@drawable/button_style"
-        android:onClick="inserir_pergunta"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="PERGUNTA"
-        android:ems="20"
-        android:id="@+id/editText_pergunta"
-        android:layout_above="@+id/editText_opcao_1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-
-        android:textColor="#ffffff"/>
 
     <TextView
         android:text="Adicionar Pergunta"
@@ -52,27 +28,60 @@
         android:layout_alignParentTop="true"
         android:textStyle="normal|bold"
         android:textColor="#ffffff"/>
-
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Opção 3"
-        android:ems="10"
-        android:id="@+id/editText_opcao_3"
+        android:hint="Pergunta"
+        android:textColorHint="#ffffff"
         android:textColor="#ffffff"
-        android:layout_centerVertical="true"
+        android:id="@+id/editText_pergunta"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Opção 1"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:id="@+id/editText_opcao_1"
+        android:layout_below="@+id/editText_pergunta"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
+        android:layout_marginTop="23dp" />
+     <EditText
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Opção 4"
-        android:ems="10"
+        android:hint="Opção 2"
+        android:textColorHint="#ffffff"
+        android:id="@+id/editText_opcao_2"
+        android:layout_below="@+id/editText_opcao_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Opção 3"
+        android:textColorHint="#ffffff"
+        android:id="@+id/editText_opcao_3"
+        android:textColor="#ffffff"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/editText_opcao_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Opção 4"
+        android:textColorHint="#ffffff"
         android:layout_marginTop="13dp"
         android:id="@+id/editText_opcao_4"
         android:textColor="#ffffff"
@@ -81,27 +90,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Opção 1"
-        android:ems="10"
-        android:id="@+id/editText_opcao_1"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/editText_opcao_2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Opção Correta"
-        android:ems="10"
+        android:hint="Opção Correta"
+        android:textColorHint="#ffffff"
         android:layout_marginTop="8dp"
         android:id="@+id/editText_opcao_correta"
         android:textColor="#ffffff"
@@ -111,11 +105,11 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="DIFICULDADE"
-        android:ems="10"
+        android:hint="Dificuldade (FACIL/MODERADO/DIFICIL)"
+        android:textColorHint="#ffffff"
         android:layout_marginTop="8dp"
         android:id="@+id/editText_dif"
         android:textColor="#ffffff"
@@ -125,15 +119,17 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Adicionar"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Opção 2"
-        android:ems="10"
-        android:id="@+id/editText_opcao_2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/button_adicionar"
         android:textColor="#ffffff"
-        android:layout_above="@+id/editText_opcao_3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/button_style"
+        android:onClick="inserir_pergunta"/>
+
+
 </RelativeLayout>

@@ -2,6 +2,7 @@ package cmu.QuizDroidFinal;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -57,6 +58,8 @@ public class AdicionarActivity extends Activity {
         //quizHelper.adicionar_informacao(pergunta,opcao_1,opcao_2,opcao_3,opcao_4,opcao_correta,sqLiteDatabase);
         Toast.makeText(getBaseContext(),"Pergunta Adicionada",Toast.LENGTH_SHORT).show();
         //quizHelper.close();
+        Intent administracao = new Intent (AdicionarActivity.this, AdicionarActivity.class);
+        startActivity(administracao);
 
     }
 

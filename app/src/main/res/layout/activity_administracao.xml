@@ -11,55 +11,7 @@
     android:background="#2c498c"
     tools:context="cmu.QuizDroidFinal.NiveisActivity">
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_adicionar"
-        android:onClick="button_adicionar"
-        android:background="@drawable/button_style"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:text="Perguntas Fácil" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:id="@+id/button_eliminar"
-        android:onClick="button_eliminar"
-        android:text="Perguntas Difícil"
-        android:layout_below="@+id/button_atualizar"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_style"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp" />
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:id="@+id/button_preferences"
-        android:onClick="button_preferences"
-        android:text="Preferências"
-        android:layout_below="@+id/button_eliminar"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_style"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp" />
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:id="@+id/button_atualizar"
-        android:onClick="button_atualizar"
-        android:text="Perguntas Moderado"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/button_adicionar"
-        android:layout_marginTop="34dp"
-        android:background="@drawable/button_style"
-        android:gravity="center"
-        android:textColor="#ffffff"/>
 
     <TextView
         android:text="Adminstração"
@@ -71,6 +23,46 @@
         android:id="@+id/Texto"
         android:textSize="30sp"
         android:textColor="@color/bright_foreground_inverse_material_light" />
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:id="@+id/button_atualizar"
+        android:onClick="button_atualizar"
+        android:text="Ver Perguntas"
+        android:layout_marginTop="126dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/Texto"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_adicionar"
+        android:onClick="button_adicionar"
+        android:layout_below="@+id/button_atualizar"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="Adicionar Pergunta" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:id="@+id/button_preferences"
+        android:onClick="button_preferences"
+        android:text="Preferências"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_adicionar"
+        android:layout_alignLeft="@+id/button_atualizar"
+        android:layout_alignStart="@+id/button_atualizar" />
 
 
 </RelativeLayout>

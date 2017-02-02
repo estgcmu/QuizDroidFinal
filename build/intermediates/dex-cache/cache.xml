@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="97bb4b56fd218f050be346066813195bdc59ee70">
+        sha1="5852f4f744e5629108e23d9af33f32da9f5c5d10">
         <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7aabcfce4615f5824fcf51cc14c5ae02852c606b/classes.dex" />
     </item>
     <item
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="1ba637837373d5d4a75f252b27de863dde2819a5">
+        sha1="68b68a8d60ed896fd2da5a01b64cc0812f222af9">
         <dex dex="/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cbf53f9601aca26bf7f5c1048dfee5f9be50bc8/classes.dex" />
     </item>
     <item

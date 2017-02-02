@@ -52,10 +52,6 @@ public class VerPerguntasActivity extends Activity {
        }
 
 
-
-
-
-
         //listview.setOnItemClickListener(onListClick);
 
         //listview.setOnItemClickListener(listview);

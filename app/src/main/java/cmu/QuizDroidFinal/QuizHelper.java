@@ -37,9 +37,9 @@ public class QuizHelper extends SQLiteOpenHelper {
     private static final String KEY_OPTC = "optc"; // option c
     private static final String KEY_OPTD = "optd"; // option d
     private static final String KEY_ODIF = "odif"; // option dificuldade
-
-    private static final String KEY_SCORE = "score";
     private static final String KEY_ID_SCORE = "sid";
+    private static final String KEY_SCORE = "score";
+
     private SQLiteDatabase dbase;
 
     public QuizHelper(Context context) {
@@ -266,14 +266,16 @@ public class QuizHelper extends SQLiteOpenHelper {
 
     //Insert Score to Ranking table
 
-    public void insertScore ( String textScore) {
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("score", textScore);
+    public void insertScore (String textScore) {
+        //ContentValues contentValues_ = new ContentValues();
+        //contentValues_.put("score", textScore);
+        //this.getWritableDatabase().insertOrThrow("ranking","",contentValues_);
 
-        this.getWritableDatabase().insertOrThrow("ranking","",contentValues);
-        //this.getWritableDatabase().execSQL("inser into ranking (score) values ("+userscore.getName()+")");
+        this.getWritableDatabase().execSQL("INSERT INTO ranking (score) VALUES('"+textScore+"')");
+
 
     }
+
 
     public void insert_question_facil (String pergunta_db, String opcao_correta_db, String opcao1, String opcao2, String opcao3, String opcao4, String dif){
         ContentValues contentValues = new ContentValues();
@@ -295,7 +297,6 @@ public class QuizHelper extends SQLiteOpenHelper {
 
         this.getWritableDatabase().execSQL("UPDATE quest_teste SET question='"+new_question+"', opta='"+new_txt_opcao_1+"', optb='"+new_txt_opcao_2+"' ,optc='"+new_txt_opcao_3+"', optd='"+new_txt_opcao_4+"' , answer='"+new_txt_opcao_correta+"' , odif='"+new_txt_opcao_dif+"'   WHERE question='"+txt_question+"'");
     }
-
 
     // Adding new question FACIL
     public void addQuestion_FACIL(Question quest) {
@@ -450,17 +451,43 @@ public class QuizHelper extends SQLiteOpenHelper {
         // return quest list
         return quest3List;
     }
-        //listar perguntas em textview (PARA REMOVER)
-        public void list_all_facil (TextView textView){
+        //listar SCORE
+     //
+    public void list_score (TextView textView){
 
-        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL + " WHERE " + KEY_ODIF + " ='FACIL'",null);
-            textView.setText("");
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM " + TABLE_RANKING,null);
+            int sum=0;
             while (cursor.moveToNext()){
-            textView.append(cursor.getString(1)+"\n");
-            textView.append(cursor.getString(2)+"\n");
+                //textView.append(cursor.getString(1)+"\n");
+               // String total = cursor.getString(0);
+                //textView_id.append(cursor.getString(0));
+                sum = cursor.getInt(1)+ sum;
+                textView.append(cursor.getString(1));
 
-        }
+                    }
+        textView.setText(Integer.toString(sum)+" €");
+
+
     }
+
+
+
+    //public ArrayList<String> getAllScores(){
+     //   Cursor cursor_getAllScores = this.getReadableDatabase().rawQuery("SELECT * FROM " + TABLE_RANKING,null);
+     //   ArrayList<String> itens_score = null;
+     //   if ( cursor_getAllScores != null && cursor_getAllScores.moveToFirst()){
+      //      itens_score = new ArrayList<String>();
+     //   }
+     //   do {
+     //       itens_score.add(cursor_getAllScores.getString(1)); //localização do array que vai ver
+
+//        }while (cursor_getAllScores.moveToNext());
+
+//        return itens_score;
+  //  }
+
+
+
 
     public ArrayList<String> getAllItens(){
         Cursor cursor_gettAllItens = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST_FACIL,null);

@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 
 public class ResultWinActvity extends Activity{
+    TextView textScore;
+    QuizHelper controller;
     MediaPlayer mp;
     @Override
     protected void onPause(){
@@ -20,17 +22,14 @@ public class ResultWinActvity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_win_actvity);
-
-        TextView textScore = (TextView) findViewById(R.id.textScore); // Imprime o Score final
-
+        textScore = (TextView) findViewById(R.id.textScore_view);
         Bundle b = getIntent().getExtras();
-
         int score = b.getInt("score");
-
-        textScore.setText(score+" €");
-
+        textScore.setText(String.format("%d", score));
         mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
         mp.start();
+        controller = new QuizHelper(this);
+        controller.insertScore(textScore.getText().toString());
     }
     public void playagain(View o) {
         Intent intent = new Intent(this, MainActivity.class);

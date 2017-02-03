@@ -34,18 +34,6 @@
         android:text="RICARDO"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
-    <TextView
-        android:id="@+id/txtPontuacao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="400dp"
-        android:gravity="center"
-        android:text="Pontuação"
-        android:textColor="#ffffff"
-        android:textSize="35.0sp"
-        android:textStyle="normal|bold" />
 
 
     <ImageView

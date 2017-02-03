@@ -21,10 +21,6 @@ public class PerfilActivity extends Activity {
         setContentView(R.layout.activity_perfil);
         userNameTextView = (TextView) findViewById(R.id.txtEditUsername);
 
-
-    //}
-    //public void load (View view){
-
     SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
 
     String name = sharedPreferences.getString("name",DEFAULT);
@@ -45,14 +41,6 @@ public class PerfilActivity extends Activity {
 
 
     }
-   // public void menu(View view){
-
-        //Toast.makeText(this,"Previous", Toast.LENGTH_LONG).show();
-     //   Intent intent=new Intent(this,AdministracaoActivity.class);
-       // startActivity(intent);
-
-
-    //}
 }
 
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:2:1-69:12
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:2:1-72:12
 	package
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/A
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:5:22-63
 application
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:7:5-67:19
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:7:5-70:19
 MERGED from [com.android.support:appcompat-v7:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/AndroidManifest.xml:22:5-20
 	android:label
@@ -146,9 +146,21 @@ ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/A
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:65:19-55
 activity#cmu.QuizDroidFinal.PerguntaDetalheActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:9-70
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:9-61
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:19-58
+activity#cmu.QuizDroidFinal.AdicionarDificilActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:67:9-62
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:67:19-59
+activity#cmu.QuizDroidFinal.EscolhaNivelActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:68:9-58
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:68:19-55
+activity#cmu.QuizDroidFinal.AdicionarModeradoActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:69:9-72
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:69:19-60
 uses-sdk
 INJECTED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/AndroidManifest.xml:20:5-43

@@ -33,6 +33,50 @@
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
     <TextView
+        android:id="@+id/numero_jogos_texto"
+        android:text="Número de Jogos:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:layout_marginLeft="90dp"
+        />
+    <TextView
+        android:id="@+id/numero_jogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/numero_jogos_texto"
+        android:layout_toEndOf="@+id/numero_jogos_texto"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/numero_vitorias_texto"
+        android:text="Número de Vitórias:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numero_jogos_texto"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:layout_marginLeft="75dp"
+        />
+    <TextView
+        android:id="@+id/numero_vitorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:layout_below="@+id/numero_jogos"
+        android:layout_toRightOf="@+id/numero_vitorias_texto"
+        android:layout_toEndOf="@+id/numero_vitorias_texto"
+        android:layout_marginLeft="10dp" />
+    <TextView
         android:id="@+id/txtPontuacaoTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,4 +98,6 @@
         android:layout_centerHorizontal="true"
 
         />
+
+
 </RelativeLayout>

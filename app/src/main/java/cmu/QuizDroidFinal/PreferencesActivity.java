@@ -5,15 +5,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.Toast;
 
 public class PreferencesActivity extends Activity {
-    public static final String DEFAULT="";
+    public static final String DEFAULT="Sem perfil";
+    public static final String DEFAULT_TEMPO="60";
     EditText userName;
     EditText tempoE;
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +28,7 @@ public class PreferencesActivity extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
 
         String name = sharedPreferences.getString("name",DEFAULT);
-        String tempo = sharedPreferences.getString("tempo",DEFAULT);
+        String tempo = sharedPreferences.getString("tempo",DEFAULT_TEMPO);
         userName.setText (name);
         tempoE.setText(tempo);
     }
@@ -40,5 +43,17 @@ public class PreferencesActivity extends Activity {
 
         Toast.makeText(this,"Informação guardada com sucesso", Toast.LENGTH_LONG).show();
     }
+    public void mute_(View view) {
+        AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        am.setStreamMute(AudioManager.STREAM_MUSIC, true);
+    }
+    public void unmute(View view) {
+        AudioManager am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+        am.setStreamMute(AudioManager.STREAM_MUSIC, false);
+    }
+    public void next(View v){
+        Intent main = new Intent (this, MainActivity.class);
+        startActivity(main);
 
+    }
     }

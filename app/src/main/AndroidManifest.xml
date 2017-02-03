@@ -63,7 +63,10 @@
         <activity android:name=".PreferencesActivity" />
         <activity android:name=".ResultWinActvity" />
         <activity android:name=".VerPerguntasActivity" />
-        <activity android:name=".PerguntaDetalheActivity"></activity>
+        <activity android:name=".PerguntaDetalheActivity" />
+        <activity android:name=".AdicionarDificilActivity" />
+        <activity android:name=".EscolhaNivelActivity" />
+        <activity android:name=".AdicionarModeradoActivity"></activity>
     </application>
 
 </manifest>

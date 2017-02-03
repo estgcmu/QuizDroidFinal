@@ -14,7 +14,7 @@ public class AdministracaoActivity extends Activity {
         setContentView(R.layout.activity_administracao);
     }
     public void button_adicionar(View v) {
-        Intent adicionar_activity = new Intent(this, AdicionarActivity.class);
+        Intent adicionar_activity = new Intent(this, EscolhaNivelActivity.class);
         startActivity(adicionar_activity);
     }
     public void button_atualizar(View v) {

@@ -70,6 +70,9 @@
         <activity android:name="cmu.QuizDroidFinal.ResultWinActvity" />
         <activity android:name="cmu.QuizDroidFinal.VerPerguntasActivity" />
         <activity android:name="cmu.QuizDroidFinal.PerguntaDetalheActivity" />
+        <activity android:name="cmu.QuizDroidFinal.AdicionarDificilActivity" />
+        <activity android:name="cmu.QuizDroidFinal.EscolhaNivelActivity" />
+        <activity android:name="cmu.QuizDroidFinal.AdicionarModeradoActivity" />
     </application>
 
 </manifest>

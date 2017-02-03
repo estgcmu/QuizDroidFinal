@@ -13,7 +13,7 @@
 
 
     <TextView
-        android:text="Adicionar Pergunta"
+        android:text="Adicionar Pergunta Fácil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -44,6 +44,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="#ffffff"
         android:hint="Opção 1"
         android:textColorHint="#ffffff"
         android:ems="10"
@@ -57,6 +58,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="Opção 2"
+         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:id="@+id/editText_opcao_2"
         android:layout_below="@+id/editText_opcao_1"
@@ -100,20 +102,6 @@
         android:id="@+id/editText_opcao_correta"
         android:textColor="#ffffff"
         android:layout_below="@+id/editText_opcao_4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Dificuldade (FACIL/MODERADO/DIFICIL)"
-        android:textColorHint="#ffffff"
-        android:layout_marginTop="8dp"
-        android:id="@+id/editText_dif"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/editText_opcao_correta"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"

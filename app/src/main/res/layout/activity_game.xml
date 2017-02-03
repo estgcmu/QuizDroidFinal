@@ -8,6 +8,82 @@
     android:orientation="vertical"
     android:weightSum="1" >
 
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="0.06"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/nova"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:src="@drawable/change_icon"
+            android:onClick="change"
+            android:textColor="#ffffff"
+            android:textSize="25.0sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cinquenta"
+            android:layout_toEndOf="@+id/cinquenta"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+        <ImageView
+            android:id="@+id/cinquenta"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:src="@drawable/cinquenta_icon"
+            android:onClick="cinquenta"
+            android:textColor="#ffffff"
+            android:textSize="25.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/telefone"
+            android:layout_toEndOf="@+id/telefone" />
+
+        <ImageView
+            android:id="@+id/telefone"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:src="@drawable/telefone_icon"
+            android:onClick="telefone"
+            android:textColor="#ffffff"
+            android:textSize="25.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/pub"
+            android:layout_toEndOf="@+id/pub" />
+
+        <ImageView
+            android:id="@+id/pub"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.45"
+            android:gravity="center"
+            android:src="@drawable/publico_icon"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:onClick="publico"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"

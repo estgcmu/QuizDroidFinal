@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="180dp"
         android:gravity="left"
         android:text="Nova Pergunta"
         android:textColor="#ffffff"
@@ -63,34 +63,19 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
+        android:hint="Introduza um Nickname"
+        android:textColorHint="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textUri|textPersonName"
         android:gravity="left"
-        android:text="EDITENICKNAME"
-        android:ems="10"
         android:id="@+id/userName"
         android:textColor="#fff"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="0dp"
         android:layout_below="@+id/textView2"
         android:textSize="30.0sp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:text="Tempo em Segundos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:textSize="30.0sp"
-        android:id="@+id/tempoE"
-        android:layout_marginTop="25dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
-        android:textColor="#fff"
-        />
 
     <Button
         android:text="Guardar"
@@ -100,22 +85,48 @@
         android:textColor="#fff"
         android:onClick="save"
         android:id="@+id/save"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="23dp"
         android:layout_above="@+id/next"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <Button
-        android:text="Musica on/off"
+        android:text="Musica Off"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_style"
         android:textColor="#fff"
-        android:onClick="musica"
+        android:onClick="mute_"
         android:id="@+id/musica"
-        android:layout_marginBottom="102dp"
-        android:layout_above="@+id/next"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/save"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <Button
+        android:text="Musica ON"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="#fff"
+        android:onClick="unmute"
+        android:id="@+id/unmute"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/musica"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="60"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="30.0sp"
+        android:id="@+id/tempoE"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
 
 
 </RelativeLayout>

@@ -51,7 +51,7 @@ public class PreferencesActivity extends Activity {
     public void unmute(View view) {
         AudioManager am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         am.setStreamMute(AudioManager.STREAM_MUSIC, false);
-        Toast.makeText(this,"AUDIO ATIVADO", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"AUDIO ATIVO", Toast.LENGTH_LONG).show();
     }
     public void next(View v){
         Intent main = new Intent (this, MainActivity.class);

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
@@ -16,12 +16,12 @@
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/res/layout/activity_question_facil.xml"
     },
     {
-        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_search_view.xml"
-    },
-    {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",

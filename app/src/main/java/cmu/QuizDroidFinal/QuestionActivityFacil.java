@@ -32,8 +32,11 @@ public class QuestionActivityFacil extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(activity_game);
+
         QuizHelper db = new QuizHelper(this);
         quesList = db.getAllQuestions();
         currentQ = quesList.get(qid);

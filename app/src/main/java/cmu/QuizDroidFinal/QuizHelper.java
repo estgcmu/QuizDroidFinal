@@ -210,10 +210,7 @@ public class QuizHelper extends SQLiteOpenHelper {
     }
 
     public void insertScore (String textScore) {
-
         this.getWritableDatabase().execSQL("INSERT INTO ranking (score) VALUES('"+textScore+"')");
-
-
     }
 
     public void insert_question (String pergunta_db, String opcao_correta_db, String opcao1, String opcao2, String opcao3, String opcao4, String dif){
@@ -287,7 +284,6 @@ public class QuizHelper extends SQLiteOpenHelper {
         dbase = this.getReadableDatabase();
         Cursor cursor = dbase.rawQuery(selectQuery_2, null);
 
-
         if (cursor.moveToFirst()) do {
             Question quest_2 = new Question();
             quest_2.setID(cursor.getInt(0));
@@ -307,18 +303,12 @@ public class QuizHelper extends SQLiteOpenHelper {
 
     }
 
-
     public List<Question> getAllQuestions_DIFICIL() {
 
         List<Question> quest3List = new ArrayList<Question>();
-
-
         String selectQuery_3 = "SELECT  * FROM " + TABLE_QUEST +" WHERE " + KEY_ODIF + "='DIFICIL' ORDER BY RANDOM() LIMIT 0,11";
-
-
         dbase = this.getReadableDatabase();
         Cursor cursor_3 = dbase.rawQuery(selectQuery_3, null);
-
         if (cursor_3.moveToFirst()) do {
             Question quest_3 = new Question();
             quest_3.setID(cursor_3.getInt(0));
@@ -329,13 +319,9 @@ public class QuizHelper extends SQLiteOpenHelper {
             quest_3.setOPTC(cursor_3.getString(5));
             quest_3.setOPTD(cursor_3.getString(6));
             quest_3.setODIF(cursor_3.getString(7));
-
-
             quest3List.add(quest_3);
         } while (cursor_3.moveToNext());
         cursor_3.close();
-
-
         return quest3List;
     }
 
@@ -348,12 +334,9 @@ public class QuizHelper extends SQLiteOpenHelper {
                 textView.append(cursor.getString(1));
                 }
         textView.setText(Integer.toString(sum)+" €");
-
         cursor.moveToLast();
         numero_jogos.append(cursor.getString(0));
     }
-
-
     public void numero_vitorias (TextView numero_vitorias){
 
         Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM "+ TABLE_RANKING + " WHERE score=100000",null);
@@ -364,7 +347,7 @@ public class QuizHelper extends SQLiteOpenHelper {
         numero_vitorias.setText(Integer.toString(vitoria));
     }
 
-
+    //Consulta todas as perguntas
     public ArrayList<String> getAllItens(){
         Cursor cursor_gettAllItens = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST,null);
         ArrayList<String> itens = null;
@@ -378,7 +361,6 @@ public class QuizHelper extends SQLiteOpenHelper {
 
         return itens;
     }
-
 
     public List<Question> getAllQuestions_edita() {
         List<Question> quesList = new ArrayList<Question>();
@@ -395,12 +377,9 @@ public class QuizHelper extends SQLiteOpenHelper {
             quest.setOPTC(cursor.getString(5));
             quest.setOPTD(cursor.getString(6));
             quest.setODIF(cursor.getString(7));
-
-
             quesList.add(quest);
         } while (cursor.moveToNext());
         cursor.close();
-
         return quesList;
 
     }

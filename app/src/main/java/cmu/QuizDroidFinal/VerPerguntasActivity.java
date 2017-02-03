@@ -77,18 +77,7 @@ public class VerPerguntasActivity extends Activity {
 
         //controller.list_all_facil(textView);
             });
-
-    //private ArrayList<String> preencherDados() {
-     //   controller = new QuizHelper(this);
-      //  controller.
-
-        //ArrayList<String> dados = new ArrayList<String>();
-        //dados.add("Mercedes");
-        //dados.add("Ferrari");
-        //dados.add("Ford");
-      //  return dados;
-
-    //}
-;}
+;
+    }
 
 }

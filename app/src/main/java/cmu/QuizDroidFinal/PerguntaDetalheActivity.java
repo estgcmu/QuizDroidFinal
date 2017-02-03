@@ -65,48 +65,10 @@ public class PerguntaDetalheActivity extends Activity {
         txt_opcao_4=(TextView) findViewById(R.id.txt_opcao_4);
         txt_opcao_correta=(TextView) findViewById(R.id.txt_opcao_correta);
         txt_opcao_dif=(TextView) findViewById(R.id.txt_opcao_dif);
-
-
-
-        // the three buttons,
-        // the idea is to set the text of three buttons with the options from question bank
-        //button1 = (Button) findViewById(R.id.button1);
-        //button2 = (Button) findViewById(R.id.button2);
-        //button3 = (Button) findViewById(R.id.button3);
-        //button4 = (Button) findViewById(R.id.button4);
-
-
-        // the textview in which score will be displayed
-        //scored = (TextView) findViewById(R.id.score);
-        //nivel = (TextView) findViewById(R.id.nivel);
-
         setQuestionView();
-
-        //passedVar=getIntent().getStringExtra(VerPerguntasActivity.ID_EXTRA);
-
-        //pergunta=getIntent().getStringExtra(VerPerguntasActivity.PERGUNTA);
-
-        //passedView=(TextView) findViewById(R.id.txt_pergunta);
-        //perguntatexto =(TextView) findViewById(R.id.txt_opcao_1);
-
-        //if(passedVar == null) {
-        //    passedView.setText("N/A");
-       // }
-
-
-        //passedView.setText("Clicou na pergunta com o ID="+passedVar);
-        //perguntatexto.setText("Clicou na pergunta com o ID="+pergunta);
-
-
-        //ourcursor = quizHelper.pesquisaid(passedVar);
-        //startManagingCursor(ourcursor);
-        //adapter=new QuizHelper(ourcursor);
-
     }
 
     private void setQuestionView() {
-
-        // the method which will put all things together
         txt_question.setText(currentQ.getQUESTION());
         txt_opcao_1.setText(currentQ.getOPTA());
         txt_opcao_2.setText(currentQ.getOPTB());
@@ -114,14 +76,6 @@ public class PerguntaDetalheActivity extends Activity {
         txt_opcao_4.setText(currentQ.getOPTD());
         txt_opcao_correta.setText(currentQ.getANSWER());
         txt_opcao_dif.setText(currentQ.getODIF());
-
-        //nivel.setText(currentQ.getODIF());
-        //button1.setText(currentQ.getOPTA());
-        //button2.setText(currentQ.getOPTB());
-        //button3.setText(currentQ.getOPTC());
-        //button4.setText(currentQ.getOPTD());
-        //qid++;
-        //qid_2++;
     }
 
     public void eliminar_pergunta(View view){

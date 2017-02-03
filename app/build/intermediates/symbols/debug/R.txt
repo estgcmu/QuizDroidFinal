@@ -641,6 +641,7 @@ int layout select_dialog_item_material 0x7f04002d
 int layout select_dialog_multichoice_material 0x7f04002e
 int layout select_dialog_singlechoice_material 0x7f04002f
 int layout support_simple_spinner_dropdown_item 0x7f040030
+int layout widget_pergunta 0x7f040031
 int mipmap ic_launcher 0x7f030000
 int raw correct_answser 0x7f070000
 int raw perdeu 0x7f070001
@@ -1259,4 +1260,4 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_inflatedId 2
 int styleable ViewStubCompat_android_layout 1
-int xml question_widget_info 0x7f060000
+int xml widget_pergunta_info 0x7f060000

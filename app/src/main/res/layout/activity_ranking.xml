@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:text="RANKING"
+        android:text="@string/ranking"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
     <TextView
@@ -34,14 +34,14 @@
         android:textSize="40.0sp" />
     <TextView
         android:id="@+id/numero_jogos_texto"
-        android:text="Número de Jogos:"
+        android:text="@string/numero_jogos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:gravity="right"
         android:textColor="#ffffff"
         android:textSize="20.0sp"
-        android:layout_marginLeft="90dp"
+        android:layout_marginLeft="60dp"
         />
     <TextView
         android:id="@+id/numero_jogos"
@@ -56,14 +56,14 @@
         android:layout_marginLeft="10dp"/>
     <TextView
         android:id="@+id/numero_vitorias_texto"
-        android:text="Número de Vitórias:"
+        android:text="@string/numero_vitorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/numero_jogos_texto"
         android:gravity="right"
         android:textColor="#ffffff"
         android:textSize="20.0sp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="50dp"
         />
     <TextView
         android:id="@+id/numero_vitorias"
@@ -84,7 +84,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="350dp"
         android:gravity="center"
-        android:text="Já Ganhas-te"
+        android:text="@string/ganhas_te"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
 

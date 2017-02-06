@@ -91,7 +91,7 @@ public class PerguntaDetalheActivity extends Activity {
                                 controller.delete_question_facil(txt_question.getText().toString());
                                 Toast.makeText(PerguntaDetalheActivity.this,"Pergunta eliminada com sucesso!", Toast.LENGTH_LONG).show();
 
-                                Intent ver_perguntas = new Intent (PerguntaDetalheActivity.this, VerPerguntasActivity.class);
+                                Intent ver_perguntas = new Intent (PerguntaDetalheActivity.this, AdministracaoActivity.class);
                                 startActivity(ver_perguntas);
                             }
                         });
@@ -110,7 +110,7 @@ public class PerguntaDetalheActivity extends Activity {
         controller = new QuizHelper(this);
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(PerguntaDetalheActivity.this);
-        dialog.setTitle("Insira a nova pergunta");
+        dialog.setTitle("Editar pergunta");
 
         Context context = txt_question.getContext();
         LinearLayout layout = new LinearLayout(context);

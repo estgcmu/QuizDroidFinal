@@ -7,7 +7,7 @@ import android.widget.TextView;
 public class RankingActivity extends Activity {
     QuizHelper controller;
     TextView textView, numero_vitorias, numero_jogos;
-
+    public static final String DEFAULT="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

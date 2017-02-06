@@ -12,7 +12,7 @@
 
 
     <TextView
-        android:text="Perguntas"
+        android:text="@string/pergunta_listas"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"

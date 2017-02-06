@@ -11,7 +11,7 @@ android:paddingTop="@dimen/activity_vertical_margin"
 android:background="#2c498c"
 tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
     <TextView
-        android:text="Pergunta"
+        android:text="@string/pergunta_lista"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -31,9 +31,9 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:layout_below="@+id/textviewpergunta"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
     <TextView
-        android:text="Opção 1"
+        android:text="@string/opcao1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -53,9 +53,9 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
     <TextView
-        android:text="Opção 2"
+        android:text="@string/opcao2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -75,9 +75,9 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
     <TextView
-        android:text="Opção 3"
+        android:text="@string/opcao3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -95,10 +95,10 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:textColor="#ffffff"
         android:layout_centerVertical="true"
         android:layout_marginTop="5dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
          />
     <TextView
-        android:text="Opção 4"
+        android:text="@string/opcao4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -115,9 +115,9 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:textColor="#ffffff"
         android:layout_below="@+id/textview_opcao_4"
         android:layout_marginTop="5dp"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
     <TextView
-        android:text="Opção Correta"
+        android:text="@string/opcao_correta"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -134,12 +134,12 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:textColor="#ffffff"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/textview_opcao_correta"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
 
 
     <TextView
-        android:text="Dificuldade"
+        android:text="@string/dificuldade"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
@@ -149,23 +149,23 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         />
 
     <Button
-        android:text="Eliminar"
+        android:text="@string/eliminar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="1dp"
         android:id="@+id/button_eliminar"
         android:textColor="#ffffff"
         android:background="@drawable/button_style_apagar"
         android:onClick="eliminar_pergunta"/>
 
     <Button
-        android:text="Editar Pergunta"
+        android:text="@string/editar_pergunta"
         android:layout_above="@id/button_eliminar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_atualizar"
         android:textColor="#ffffff"
@@ -178,7 +178,7 @@ tools:context="cmu.QuizDroidFinal.PerguntaDetalheActivity">
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="DIFICULDADE"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:id="@+id/txt_opcao_dif"
         android:textColor="#ffffff"
         android:layout_below="@+id/textview_dificuldade"

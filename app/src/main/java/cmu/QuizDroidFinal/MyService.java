@@ -1,34 +1,37 @@
 package cmu.QuizDroidFinal;
+import android.app.Service;
+import android.content.Intent;
+import android.database.Cursor;
+import android.os.IBinder;
+import android.widget.ArrayAdapter;
+
+import java.util.ArrayList;
+
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.widget.Button;
-import android.widget.TextView;
-
-import java.util.List;
+import android.widget.ListView;
 
 public class MyService extends Service {
-    public MyService() {
-    }
-
+    QuizHelper controller;
+    String pergunta, answer, opta, optb, optc, optd;
+    @SuppressWarnings("unused")
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
+        // Obter o extra enviado pelo Intent da Activity
+        //String texto = intent.getExtras().getString(MainActivity.INTENT_EXTRA);
+        controller = new QuizHelper(this);
+        controller.pergunta_widget(pergunta,answer,opta,optb,optc,optd);
 
-        List<Question> quesList;
-        int score = 0;
-        int qid = 0;
-        int publico = 0;
-        int telefone_controlo = 0;
-        int cinquenta_controlo = 0;
-        int change_controlo = 0;
-        Question currentQ;
-        TextView txtQuestion, scored, nivel;
-        Button button1, button2, button3, button4;
+        Intent updateWidget = new Intent();
+       //updateWidget.setAction(Widget_pergunta.updateAppWidget());
+        //updateWidget.putExtra(Widget_pergunta.updateAppWidget(),new int[]{appWidgetId});
 
 
-        return super.onStartCommand(intent, flags, startId);
+
+        return START_REDELIVER_INTENT;
     }
 
     @Override
@@ -42,8 +45,7 @@ public class MyService extends Service {
     }
 
     @Override
-    public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+    public IBinder onBind(Intent arg0) {
+        return null;
     }
 }

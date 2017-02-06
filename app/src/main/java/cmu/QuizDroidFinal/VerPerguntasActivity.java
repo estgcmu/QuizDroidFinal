@@ -40,13 +40,17 @@ public class VerPerguntasActivity extends Activity {
         listview.setAdapter(arrayAdapter);
 
         listview.setOnItemClickListener (new AdapterView.OnItemClickListener(){
-          @Override
+
+
+
+
+            @Override
             public  void onItemClick(AdapterView<?> adapterView, View view, int i, long id){
 
             Intent intent = new Intent(VerPerguntasActivity.this, PerguntaDetalheActivity.class);
             intent.putExtra(ID_EXTRA, String.valueOf(id));
               intent.putExtra(PERGUNTA, String.valueOf("Question"));
-            startActivity (intent);
+              startActivity (intent);
 
 
        }
@@ -77,7 +81,7 @@ public class VerPerguntasActivity extends Activity {
 
         //controller.list_all_facil(textView);
             });
-;
+
     }
 
 }

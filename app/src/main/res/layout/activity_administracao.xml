@@ -14,7 +14,7 @@
 
 
     <TextView
-        android:text="Adminstração"
+        android:text="@string/administracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -23,16 +23,13 @@
         android:id="@+id/Texto"
         android:textSize="30sp"
         android:textColor="@color/bright_foreground_inverse_material_light" />
-
-
-
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:id="@+id/button_atualizar"
         android:onClick="button_atualizar"
-        android:text="Ver Perguntas"
-        android:layout_marginTop="126dp"
+        android:text="@string/perguntas"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
@@ -49,18 +46,31 @@
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
-        android:text="Adicionar Pergunta" />
+        android:text="@string/adicionar_pergunta_admin" />
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:id="@+id/button_preferences"
         android:onClick="button_preferences"
-        android:text="Preferências"
+        android:text="@string/preferencias"
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/button_adicionar"
+        android:layout_alignLeft="@+id/button_atualizar"
+        android:layout_alignStart="@+id/button_atualizar" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:id="@+id/button_menu"
+        android:onClick="button_menu"
+        android:text="@string/menu"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_preferences"
         android:layout_alignLeft="@+id/button_atualizar"
         android:layout_alignStart="@+id/button_atualizar" />
 

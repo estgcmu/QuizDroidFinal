@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:text="PERFIL"
+        android:text="@string/perfil"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
 
@@ -31,7 +31,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="350dp"
         android:gravity="center"
-        android:text="SEM PERFIL"
+        android:text="@string/no_perfil"
         android:textColor="#ffffff"
         android:textSize="40.0sp" />
 

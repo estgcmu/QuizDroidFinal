@@ -26,6 +26,10 @@ public class AdministracaoActivity extends Activity {
         Intent preferenciasaa = new Intent(this, PreferencesActivity.class);
         startActivity(preferenciasaa);
     }
+    public void button_menu(View v) {
+        Intent menu = new Intent(this, MainActivity.class);
+        startActivity(menu);
+    }
 
 }
 

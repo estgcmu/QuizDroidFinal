@@ -13,7 +13,7 @@
 
 
     <TextView
-        android:text="Adicionar Pergunta Fácil"
+        android:text="@string/adicionar_pergunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -32,7 +32,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Pergunta"
+        android:hint="@string/pergunta"
         android:textColorHint="#ffffff"
         android:textColor="#ffffff"
         android:id="@+id/editText_pergunta"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:textColor="#ffffff"
-        android:hint="Opção 1"
+        android:hint="@string/opcao1"
         android:textColorHint="#ffffff"
         android:ems="10"
         android:id="@+id/editText_opcao_1"
@@ -57,7 +57,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Opção 2"
+        android:hint="@string/opcao2"
          android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:id="@+id/editText_opcao_2"
@@ -70,7 +70,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Opção 3"
+        android:hint="@string/opcao3"
         android:textColorHint="#ffffff"
         android:id="@+id/editText_opcao_3"
         android:textColor="#ffffff"
@@ -82,7 +82,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Opção 4"
+        android:hint="@string/opcao4"
         android:textColorHint="#ffffff"
         android:layout_marginTop="13dp"
         android:id="@+id/editText_opcao_4"
@@ -96,7 +96,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Opção Correta"
+        android:hint="@string/opcao_correta"
         android:textColorHint="#ffffff"
         android:layout_marginTop="8dp"
         android:id="@+id/editText_opcao_correta"
@@ -108,7 +108,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="Adicionar"
+        android:text="@string/adcionar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

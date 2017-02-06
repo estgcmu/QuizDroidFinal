@@ -15,7 +15,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,19 +38,31 @@
             android:name=".RankingActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-        <activity android:name=".AdministracaoActivity" />
-        <activity android:name=".AdicionarActivity" />
-        <activity android:name=".QuestionActivityFacil" />
-        <activity android:name=".QuestionActivityModerado" />
-        <activity android:name=".QuestionActivityDificil" />
-        <activity android:name=".PreferencesActivity" />
-        <activity android:name=".ResultWinActvity" />
-        <activity android:name=".VerPerguntasActivity" />
-        <activity android:name=".PerguntaDetalheActivity" />
-        <activity android:name=".AdicionarDificilActivity" />
-        <activity android:name=".EscolhaNivelActivity" />
-        <activity android:name=".AdicionarModeradoActivity" />
-
+        <activity android:name=".AdministracaoActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".AdicionarActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".QuestionActivityFacil"
+            android:screenOrientation="portrait" />
+        />
+        <activity android:name=".QuestionActivityModerado"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".QuestionActivityDificil"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".PreferencesActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".ResultWinActvity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".VerPerguntasActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".PerguntaDetalheActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".AdicionarDificilActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".EscolhaNivelActivity"
+            android:screenOrientation="portrait" />/>
+        <activity android:name=".AdicionarModeradoActivity"
+            android:screenOrientation="portrait" />
         <receiver android:name=".Widget_pergunta">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -65,7 +76,7 @@
         <service
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
     </application>
 
 </manifest>

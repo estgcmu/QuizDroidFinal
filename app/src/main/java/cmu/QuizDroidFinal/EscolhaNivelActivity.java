@@ -26,5 +26,9 @@ public class EscolhaNivelActivity extends Activity {
         Intent dificil = new Intent(this, AdicionarDificilActivity.class);
         startActivity(dificil);
     }
+    public void button_menu(View v) {
+        Intent menu = new Intent(this, AdministracaoActivity.class);
+        startActivity(menu);
+    }
     }
 

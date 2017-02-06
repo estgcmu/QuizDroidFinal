@@ -16,12 +16,12 @@ public class QuizHelper extends SQLiteOpenHelper {
     private static final String TABLE_QUEST = "quest_teste"; // Nome da tabela
     private static final String KEY_ID = "qid";
     private static final String KEY_QUES = "question";
-    private static final String KEY_ANSWER = "answer"; // correct option
-    private static final String KEY_OPTA = "opta"; // option a
-    private static final String KEY_OPTB = "optb"; // option b
-    private static final String KEY_OPTC = "optc"; // option c
-    private static final String KEY_OPTD = "optd"; // option d
-    private static final String KEY_ODIF = "odif"; // option dificuldade
+    private static final String KEY_ANSWER = "answer"; // opção correta
+    private static final String KEY_OPTA = "opta"; // opção a
+    private static final String KEY_OPTB = "optb"; // opção b
+    private static final String KEY_OPTC = "optc"; // opção c
+    private static final String KEY_OPTD = "optd"; // opção d
+    private static final String KEY_ODIF = "odif"; // opção dificuldade
     private static final String KEY_ID_SCORE = "sid";
     private static final String KEY_SCORE = "score";
 
@@ -246,8 +246,6 @@ public class QuizHelper extends SQLiteOpenHelper {
         dbase.insert(TABLE_QUEST, null, values);
     }
 
-
-
     //CONSULTA PERUGUNTAS POR NIVEL DE DIFICULDADE
     public List<Question> getAllQuestions() {
         List<Question> quesList = new ArrayList<Question>();
@@ -264,23 +262,16 @@ public class QuizHelper extends SQLiteOpenHelper {
             quest.setOPTC(cursor.getString(5));
             quest.setOPTD(cursor.getString(6));
             quest.setODIF(cursor.getString(7));
-
-
             quesList.add(quest);
         } while (cursor.moveToNext());
         cursor.close();
-
-
         return quesList;
 
     }
 
     public List<Question> getAllQuestions_MODERADO() {
-
         List<Question> quest2List = new ArrayList<Question>();
-
         String selectQuery_2 = "SELECT  * FROM " + TABLE_QUEST +" WHERE " + KEY_ODIF + "='MODERADO' ORDER BY RANDOM() LIMIT 0,11";
-
         dbase = this.getReadableDatabase();
         Cursor cursor = dbase.rawQuery(selectQuery_2, null);
 
@@ -304,7 +295,6 @@ public class QuizHelper extends SQLiteOpenHelper {
     }
 
     public List<Question> getAllQuestions_DIFICIL() {
-
         List<Question> quest3List = new ArrayList<Question>();
         String selectQuery_3 = "SELECT  * FROM " + TABLE_QUEST +" WHERE " + KEY_ODIF + "='DIFICIL' ORDER BY RANDOM() LIMIT 0,11";
         dbase = this.getReadableDatabase();
@@ -324,9 +314,24 @@ public class QuizHelper extends SQLiteOpenHelper {
         cursor_3.close();
         return quest3List;
     }
+    //SERVICE
+    public void pergunta_widget (String pergunta, String opta, String optb, String optc, String optd, String answer){
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT  * FROM " + TABLE_QUEST + "ORDER BY RANDOM()",null);
+        //if
+                cursor.moveToFirst();
+        // do {
+            pergunta=cursor.getString(1);
+            answer=cursor.getString(2);
+            opta=cursor.getString(3);
+            optb=cursor.getString(4);
+            optc=cursor.getString(5);
+            optd=cursor.getString(6);
+
+            //cursor.close();
+        //}
+    }
 
     public void list_score (TextView textView, TextView numero_jogos){
-
         Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM " + TABLE_RANKING,null);
             int sum=0;
             while (cursor.moveToNext()){
@@ -334,8 +339,13 @@ public class QuizHelper extends SQLiteOpenHelper {
                 textView.append(cursor.getString(1));
                 }
         textView.setText(Integer.toString(sum)+" €");
-        cursor.moveToLast();
-        numero_jogos.append(cursor.getString(0));
+        cursor.moveToFirst();
+        if (cursor.isBeforeFirst()) //Cursor vazio
+            numero_jogos.append("0");
+            else{
+            cursor.moveToLast();
+            numero_jogos.append(cursor.getString(0));
+        }
     }
     public void numero_vitorias (TextView numero_vitorias){
 
@@ -358,7 +368,6 @@ public class QuizHelper extends SQLiteOpenHelper {
             itens.add(cursor_gettAllItens.getString(1)); //localização do array que vai ver
 
         }while (cursor_gettAllItens.moveToNext());
-
         return itens;
     }
 

@@ -11,7 +11,7 @@
     android:background="#2c498c"
     tools:context="cmu.QuizDroidFinal.EscolhaNivelActivity">
     <TextView
-        android:text="Escolha o nível"
+        android:text="@string/escolha_nivel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -25,8 +25,8 @@
         android:layout_height="75dp"
         android:id="@+id/button_atualizar"
         android:onClick="button_facil"
-        android:text="Nível Fácil"
-        android:layout_marginTop="126dp"
+        android:text="@string/nivel_facil"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
@@ -43,18 +43,31 @@
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
-        android:text="Nível Moderado" />
+        android:text="@string/nivel_moderado" />
     <Button
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:id="@+id/button_preferences"
+        android:id="@+id/button_dificil"
         android:onClick="button_dificil"
-        android:text="Nível Difícil"
+        android:text="@string/nivel_dificil"
         android:background="@drawable/button_style"
         android:gravity="center"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/button_adicionar"
+        android:layout_alignLeft="@+id/button_atualizar"
+        android:layout_alignStart="@+id/button_atualizar" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:id="@+id/button_menu"
+        android:onClick="button_menu"
+        android:text="@string/menu"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_dificil"
         android:layout_alignLeft="@+id/button_atualizar"
         android:layout_alignStart="@+id/button_atualizar" />
 </RelativeLayout>

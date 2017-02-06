@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:2:1-71:12
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:2:1-82:12
 	package
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/A
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:5:22-63
 application
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:7:5-69:19
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:7:5-80:19
 MERGED from [com.android.support:appcompat-v7:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/AndroidManifest.xml:22:5-20
 	android:label
@@ -30,7 +30,7 @@ MERGED from [com.android.support:support-v4:22.1.1] /Users/joaosoares/AndroidStu
 	android:theme
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:11:9-40
 activity#cmu.QuizDroidFinal.MainActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:12:9-21:20
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:12:9-20:20
 	android:screenOrientation
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:15:13-49
 	android:label
@@ -38,127 +38,151 @@ ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/A
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:13:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
 ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:18:27-74
 activity#cmu.QuizDroidFinal.QuestionActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:22:9-25:52
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:21:9-24:52
 	android:screenOrientation
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:25:13-49
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:24:13-49
 	android:label
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:24:13-45
-	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:23:13-45
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:22:13-45
 activity#cmu.QuizDroidFinal.ResultActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:26:9-29:52
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:25:9-28:52
 	android:screenOrientation
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:29:13-49
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:28:13-49
 	android:label
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:27:13-43
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:26:13-43
 activity#cmu.QuizDroidFinal.NiveisActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:30:9-33:52
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:29:9-32:52
 	android:screenOrientation
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:33:13-49
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:32:13-49
 	android:label
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:32:13-45
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:31:13-43
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:30:13-43
 activity#cmu.QuizDroidFinal.PerfilActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:34:9-37:52
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:33:9-36:52
 	android:screenOrientation
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:37:13-49
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:36:13-45
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:35:13-45
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:35:13-43
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:34:13-43
 activity#cmu.QuizDroidFinal.RankingActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:38:9-41:52
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:37:9-40:52
 	android:screenOrientation
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:41:13-49
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:40:13-49
 	android:label
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:40:13-45
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:39:13-45
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:38:13-44
 activity#cmu.QuizDroidFinal.AdministracaoActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:42:9-59
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:41:9-42:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:42:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:42:19-56
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:41:19-56
 activity#cmu.QuizDroidFinal.AdicionarActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:43:9-55
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:43:9-44:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:44:13-49
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:43:19-52
 activity#cmu.QuizDroidFinal.QuestionActivityFacil
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:44:9-59
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:45:9-46:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:46:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:44:19-56
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:45:19-56
 activity#cmu.QuizDroidFinal.QuestionActivityModerado
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:45:9-62
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:48:9-49:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:49:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:45:19-59
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:48:19-59
 activity#cmu.QuizDroidFinal.QuestionActivityDificil
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:46:9-61
-	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:46:19-58
-activity#cmu.QuizDroidFinal.PreferencesActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:47:9-57
-	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:47:19-54
-activity#cmu.QuizDroidFinal.ResultWinActvity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:48:9-54
-	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:48:19-51
-activity#cmu.QuizDroidFinal.VerPerguntasActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:49:9-58
-	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:49:19-55
-activity#cmu.QuizDroidFinal.PerguntaDetalheActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:50:9-61
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:50:9-51:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:51:13-49
 	android:name
 		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:50:19-58
+activity#cmu.QuizDroidFinal.PreferencesActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:52:9-53:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:53:13-49
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:52:19-54
+activity#cmu.QuizDroidFinal.ResultWinActvity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:54:9-55:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:55:13-49
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:54:19-51
+activity#cmu.QuizDroidFinal.VerPerguntasActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:56:9-57:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:57:13-49
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:56:19-55
+activity#cmu.QuizDroidFinal.PerguntaDetalheActivity
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:58:9-59:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:59:13-49
+	android:name
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:58:19-58
 activity#cmu.QuizDroidFinal.AdicionarDificilActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:51:9-62
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:60:9-61:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:61:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:51:19-59
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:60:19-59
 activity#cmu.QuizDroidFinal.EscolhaNivelActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:52:9-58
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:62:9-63:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:63:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:52:19-55
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:62:19-55
 activity#cmu.QuizDroidFinal.AdicionarModeradoActivity
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:53:9-63
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:64:9-65:52
+	android:screenOrientation
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:65:13-49
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:53:19-60
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:64:19-60
 receiver#cmu.QuizDroidFinal.Widget_pergunta
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:55:9-63:20
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:9-74:20
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:55:19-50
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:19-50
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:56:13-58:29
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:67:13-69:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:57:17-84
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:68:17-84
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:57:25-81
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:68:25-81
 meta-data#android.appwidget.provider
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:60:13-62:64
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:71:13-73:64
 	android:resource
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:62:17-61
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:73:17-61
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:61:17-58
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:72:17-58
 service#cmu.QuizDroidFinal.MyService
-ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:65:9-68:47
+ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:76:9-79:39
 	android:enabled
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:67:13-35
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:78:13-35
 	android:exported
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:68:13-36
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:79:13-36
 	android:name
-		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:66:13-38
+		ADDED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml:77:13-38
 uses-sdk
 INJECTED from /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.1.1] /Users/joaosoares/AndroidStudioProjects/QuizDroidFinal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/AndroidManifest.xml:20:5-43

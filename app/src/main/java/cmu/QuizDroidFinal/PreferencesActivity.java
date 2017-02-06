@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class PreferencesActivity extends Activity {
-    public static final String DEFAULT="Sem perfil";
+    public static final String DEFAULT="";
     public static final String DEFAULT_TEMPO="60";
     EditText userName;
     EditText tempoE;
